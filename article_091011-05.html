@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style7 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style10 {
+	font-size: 13px;
+	font-style: italic;
+}
+.style11 {
+	font-size: 14px;
+	font-style: italic;
+}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" colspan="2" bgcolor="#BBFFC7"><span class="style7">11.10.2009 Our boys win their final game</span></td>
+          </tr>
+          <tr>
+            <td width="97%" rowspan="2"><p><span class="style10"><br />
+              by Chen Hui Jing</span></p>
+              <p>Malaysia won their last game of the tournament to end this year's MIBC with a 4-1 record for a second-place finish, defeating the Philippines Pharex Bidang Generix team 91-79.</p>
+              <p>Our boys started off the game on a 12-3 run with three 3-pointers by skipper Koh Way Tek and one by youngster, Kuek Tian Yuan. But the Philippines roared right back with a three-point shooting streak of their own with Ian Chris Mazo, Mark Angelo Canlas and John Carl Melegrito all hitting shots from beyond the arc, and the Filipinos went into the second quarter with an 8 point lead.</p>
+              <p> Ian Chris Mazo drained another 3-pointer at the start of the second quarter, giving the Filipinos a double-digit lead. However, Malaysian offense woke up immediately after and our boys went on a 13-0 run off five consecutive field goals, and Malaysia regained a 2-point lead with 6:38 remaining in the second quarter. Both sides were shooting well tonight and the score at halftime was 42-40 in favour of the hosts.              </p>
+              <p>Guganeswaran hit a three to open the second half of play, as the Malaysian side got into a groove and extended their lead to 10 just over two minutes into the third quarter. A flurry of turnovers by the Malaysians gave the Pharex Bidang Generix squad a chance to get back into the game and the lead was cut to 1 by a 3-pointer from the corner by Jerick canada with 2:57 left in the third quarter.              </p>
+              <p>After a technical foul on Conrad Fritz Bauzon, Malaysian guard, Chai Chze Hian, scored 6 in-a-row off the bench to settle down the Malaysian side. Malaysia had a 7-point lead at the end of the third quarter.              </p>
+              <p>Momentum had shifted over to the Malaysian side and there was no stopping the host team now. As time ran down, youngster, Gan Hong Hoong drove in the lane for the last shot of the tournament and Malaysia won the game with a score of 91-79.</p>
+              <p> Four Malaysian players scored in double-digits tonight. Koh Way Tek had 17 points and 6 rebounds. Chee Li Wei and Chai Chze Hian each had 16 points each, and John Ng contributed 15 points.</p>
+            <p> The Philippines Pharex Bidang Generix squad also had four players scoring in double-figures. Ian Chris Mazo led all scorers with 21 points, hitting 5-of-10 from beyond the arc. Alfredo Gerilla Jr had 17 points and 6 rebounds. Conrad Fritz Bauzon and Mark Angelo Canlas each had 12 points and 10 points respectively.</p></td>
+            <td width="3%" height="427"><div align="right">
+              <p><img src="/site_files/mas_phil_article.jpg" alt="MAS vs PHIL" width="200" height="276" /></p>
+            </div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><br><strong>勇挫菲律賓
+馬男喜獲亞軍
+
+            </strong></p>
+              <p>蔡子賢和黃有成兩人從板凳殺出聯手攻下30分，幫助大馬男籃在第2屆馬來西亞國際籃球邀請賽最后一役，技高一籌以91比79力挫菲律賓次級聯賽PBL亞軍法樂仕。</p>
+              <p> 大馬最終以4胜1負的成績獲得亞軍，算是超額完成了任務，法樂仕與韓國朝鮮大學同為1胜4負，但比較對賽成績，曾以92比81擊敗法樂仕的韓隊獲得第5名，法樂仕不幸為賽會扛大旗。              </p>
+              <p>許偉德為大馬射下全隊最高的17分外加6籃板，陳利偉16分8籃板6火鍋。此外，蔡子賢和黃有成也提供了板凳火力支援，前者貢獻16分，后者添上14分6籃板4助攻，控衛古加尼送出7次助攻。              </p>
+              <p>法樂仕方面，馬索飆進全場最高的21分，包括10投5中的三分球，格里亞獲得17分6籃板，鮑松交出12分6籃板4助攻，坎拉斯則有10分5籃板進帳。              </p>
+              <p><strong>許偉德奪17分</strong></p>
+              <p> 此役雙方一開場即在外線進行激烈“駁火”，格里亞以一記三分球開局，但大馬隨后還以顏色連炸4顆三分彈，其中隊長許偉德個人包辦了3粒，反以12比3超前。</p>
+              <p> 法樂仕也毫不讓步，16平后打出一波10比2的攻勢以26比18領先首節。不過，大馬在次節急起直追以42比40領先上半場，第3節中段一度以54比44領先10分。              </p>
+              <p>拒絕投降的法樂仕隨后以全場盯人反擊，成功追至55比56僅落后1分，戰況再度吃緊起來。所幸蔡子賢及時爆發個人獨取8分，打完3節以64比57領先。</p>
+            <p> 末節法樂仕全力反扑，但陳利偉、魏川進、羅樹輝、蔡子賢和黃有成相繼建功，讓法樂仕始終無法收復失地，終場前1分49秒，黃有成連得4分將比分擴大為89比74，一舉鎖定胜局。</p>
+            <p><strong>馬男最大收穫 後浪衝擊前浪</strong></p>
+            <p>當初大馬男籃決定以純本土球員，出戰第2屆馬來西亞國際籃球邀請賽，早已做了最壞打算，最終獲得亞軍可說是意外，但如果要說最大收獲，那應該是球員的信心和几名可堪重用的年輕小將。</p>
+            <p>主帥吳清發在賽前就反覆強調，要改掉大馬球員以往遇到強隊就未戰先敗的心理弱點，當然最好的方法就是用成績來說話，而這次大馬在沒有洋將的情況下打出佳績，無疑為球員注入強心劑。</p>
+            <p>事實上，發哥在刺激球員信心方面做了不少嚐試，包括把關永境和郭添源兩名小將放進首發陣容，雖然出場時間不多，但不管怎樣，國家隊先發球員的頭銜，對年輕球員來說是個不小的激勵。</p>
+            <p><strong>建立良性競爭</strong></p>
+            <p>永境和添源是發哥召入的其中兩位新人，另外兩名菜鳥是何耀隆和顏坊峰，主要目的除了培養新秀之外，同時也希望在隊內建立良性的競爭，尤其是對那些自以為地位穩固的球員，這是一次警惕。</p>
+            <p>盡管4名新人在本屆賽會的出場時間有限，但發哥已經不止一次公開稱讚他們的表現，特別是何耀隆和關永境兩人均獲得了相當高的評價。</p>
+            <p>發哥指出：“我真的很滿意耀隆的表現，他在關鍵時刻的抗壓性很強，我在元首杯的時候就看中了這名球員，我喜歡他在場上的那股拚勁。”</p>
+            <p>“永境雖然攻擊力不強，但他在防守和搶籃板方面可以幫到球隊。其實許偉德已慢慢轉型為外線球員，籃板球少了，永境可以彌補這方面的不足。”</p>
+            <p>值得一提，耀隆和永境都出人意料入選了吉隆坡猛龍征戰東南亞職籃聯賽（ABL）的陣容，可見發哥對兩人確實青睞有加，當然，發哥看中的還有兩人的態度。</p>
+            <p><strong>亞軍背後意義 
+              突破恐菲症</strong></p>
+            <p>為了克服“恐菲症”，對菲律賓次級聯賽PBL亞軍法樂仕一役，大馬男籃主帥吳清發頒下了“必胜令”，結果球員的表現也沒有令他失望。</p>
+            <p>蔡子賢和黃有成兩人從板凳殺出聯手攻下30分，幫助大馬男籃在第2屆馬來西亞國際籃球邀請賽最后一役，技高一籌以91比79力挫法樂仕，並以4胜1負的成績獲得亞軍，1胜4負的法樂仕不幸墊底。</p>
+            <p>事實上，大馬此役即使輸球也已基本穩獲亞軍，毫無壓力，但發哥依然要求隊員全力爭胜，一方面是為了不讓主場球迷失望，更重要的是希望藉此慢慢克服“恐菲症”。</p>
+            <p><strong>不讓球迷失望</strong></p>
+            <p>他表示：“正因為對手是菲律賓球隊，我們此役非胜不可，以前我們總是聽到菲律賓球隊就怕，所以我要求隊員不管怎樣也要打敗他們，找回信心。”</p>
+            <p>此役雙方互有領先，法樂仕以26比18領先首節。但大馬次節急起直追以42比40領先上半場，第3節中段一度以54比44領先10分。</p>
+            <p>拒絕投降的法樂仕隨后以全場盯人反擊，成功追至55比56僅落后1分，戰況再度吃緊起來。所幸蔡子賢及時爆發個人獨取8分，打完3節以64比57領先，末節后段一度將差距拉大為15分，胜券在握。</p>
+            <p>許偉德為大馬射下全隊最高的17分外加6籃板，陳利偉16分8籃板6火鍋。此外，蔡子賢和黃有成也提供了板凳火力支援，前者貢獻16分，后者添上14分6籃板4助攻，控衛古加尼送出7次助攻。</p>
+            <p>法樂仕方面，馬索飆進全場最高的21分，包括10投5中的三分球，格里亞獲得17分6籃板，鮑松交出12分6籃板4助攻，坎拉斯則有10分5籃板進帳。</p>
+            <p class="style11">中国报 葉正焮報導</p></td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t2" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style7 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style10 {
+	font-size: 13px;
+	font-style: italic;
+}
+.style11 {	font-size: 14px;
+	font-style: italic;
+}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" colspan="2" bgcolor="#BBFFC7"><span class="style7">11.10.2009 Haishan High School hands our girls their second defeat</span></td>
+          </tr>
+          <tr>
+            <td width="97%" rowspan="2"><p><span class="style10"><br />
+              by Chen Hui Jing</span></p>
+              <p>Plagued by inconsistent shooting, our girls were unable to overcome the Haishan High School team. The final score of the game was 93-67 in favour of Haishan High School.</p>
+              <p>Our girls got off to a slow start, with shots from the perimeter adamantly refusing to fall. Liu Jung-Hsing from Haishan had the hot hand early on, hitting two 3-pointers to extend the Haishan lead to eight, with 5:24 left in the first quarter. Liu His-Yeh hit a 3-pointer at the buzzer to increase the Haishan lead to 12 after ten minutes of play.</p>
+              <p>Liu Jung-Hsing continued her shooting streak into the second quarter hitting another three 3-pointers, making 5-of-7 from beyond the arc, scoring 19 points in the first half. 
+                The Malaysians, though with more shot attempts than the Taiwanese, were not having a good shooting day, and only managed 27% from the field.              </p>
+              <p>The Malaysians regained their shooting touch in the second half, hitting 5-of-11 three point attempts in the third quarter. The Haishan girls, however, continued to shoot well and both teams scored 24 points each in the third quarter, with Haishan maintaining its lead.              </p>
+              <p>Our girls started the fourth quarter raring to go, with Hee Shook Ying scoring four points in a row off the offensive boards. A steal and score by Nur Izzati with 6:24 to go in the game reduced the Taiwanese lead to 11. Goh Beng Fong hit a three from way out, igniting the crowd and cutting the Haishan lead further to 8. </p>
+              <p>However, the Haishan girls kept their poise and point guard, Pan Taz-Yin, managed to drive all the way to the basket and kept the Malaysians at bay.
+                
+                Our girls lost their shooting rhythm and were unable to score. The Haishan shots, on the other hand, continued to find the bottom of the net and they pulled away to win the game 93-67.              </p>
+              <p>Four Haishan players scored in double-digits. Liu His-Yeh led all scorers with 25 points and also grabbed 10 rebounds for a double-double performance. Sharpshooter, Liu Jung-Hsing made was 6-for-12 from three point range, scoring 22 points. Pan Taz-Yin had 20 points, 6 rebounds and 5 assists in an all-round display and Huanh Hsian-Ting added 15 points.            </p>
+            <p>From  the Malaysian side, three players scored in double-figures. Goh Beng Fong led the team with 16 points and grabbed 6 rebounds. Yong Shin Min also contributed 11 points and 7 rebounds. Pee Yann Yann chipped in with 10 points.</p></td>
+            <td width="3%" height="427"><div align="right">
+              <p><img src="/site_files/wmas_tpe_article.JPG" alt="TPE vs MAS" width="200" height="268" /></p>
+            </div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><br><strong>台末仗不留情 馬女第3名</strong></p>
+              <p>（吉隆坡11日訊）中華台北海山高中內外開花，結果大馬女籃在顧此失彼的情況下，終場以67比93吞下慘敗，只能以1胜2負的成績獲得第3名，海山2胜1負獲亞軍。              </p>
+              <p>海山此役几乎統治了內線，籃板球以45比29大胜大馬，禁區得分也以38比18取得絕對優勢，加上個別球員在外線屢有斬獲，大馬只能無奈接受失利的事實。              </p>
+              <p>得力主力劉希曄打出25分10籃板的雙十表現，劉容杏三分球12投6中攻下22分，控衛潘姿呤貢獻20分6籃板5助攻，黃湘婷則有15分8籃板進賬。              </p>
+              <p>大馬全場比賽都在扮演追趕者的角色，上半場以25比43大幅落后，差距一度在第3節擴大至24分。盡管大馬末節絕地反攻曾追至65比73，可惜已氣力放盡，海山以一波20比2的終結性攻勢鎖定胜局。</p>
+            <p> 吳明鳳為大馬拿下16分6籃板，楊欣敏11分7籃板，彭燕燕10分3籃板，其他球員的表現皆在正常水平之下。</p>
+            <p><strong>強隊面前挨打 馬女缺乏磨練</strong></p>
+            <p>頂著亞錦賽第Ⅱ級冠軍的光環，大馬女籃在本屆國際邀請賽的表現相當令人失望，再度暴露了大馬球員基本功不夠扎實、缺乏高強度比賽磨鍊的問題。</p>
+            <p>這一點可以從慘負廣州青年隊和中華台北海山高中的兩場比賽中看出來，與9月份出征亞錦賽的陣容相比，大馬只換了兩名鮮少出場的小將，其餘10人都是奪得第Ⅱ級冠軍的班底。</p>
+            <p>這個陣容能夠在亞錦賽交出良好表現，但面對廣州青年隊和海山高中兩支年輕球隊，大馬卻輸得一敗塗地，對新加坡內政群英也僅僅是險胜。</p>
+            <p><strong>國內沒有對手</strong></p>
+            <p>雖然主帥陳時和把原因歸咎于球員征戰亞錦賽后元氣大傷，未能及時恢復過來，但這個說法似乎有點牽強，畢竟大馬女籃從清奈歸來到邀請賽開打，已經相隔了兩個星期。</p>
+            <p>或許海山高中主帥時超杰的觀點更客觀：“馬來西亞一直在進步，但可能她們在國內缺少練兵對手，這是對她們不利的地方。我們在台灣有很多強隊可以作為練習對手，也經常出國參加國際賽。”</p>
+            <p>陳時和也不約而同提到了這一點：“我們很少有机會參加國際賽，雖然我們偶爾也出國打比賽，但畢竟還是友誼賽性質，強度比不上真正的國際賽。”</p>
+            <p>此外，陳教練在開賽曾前表示，本屆賽會的其中一個目標就是考察葉晶兒、蘇葦穎和 卡萊瑪蒂3名新人，可惜最終的結果令人感到失望。</p>
+            <p>他說：“我們沒有達到考察新人的目標，其實大家都看到了，她們在場上顯得太緊張，不知道自己應該做什么，說明她們仍無法面對大賽的考驗。”</p>
+            <p><strong>全場都在追趕 
+              負台無話可說</strong></p>
+            <p>接連以大比分輸給中國廣州青年隊和中華台北海山高中，大馬女籃主帥陳時和承認技不如人，並且還有很多東西可以向對手學習。</p>
+            <p>海山高中昨晚在女子組最后一役內外開花，結果大馬女籃在顧此失彼的情況下，終場以67比93吞下慘敗，只能以1胜2負的成績獲得第3名，海山2胜1負獲亞軍。</p>
+            <p><strong>陳時和：外線失守</strong></p>
+            <p>此役海山完全統治了內線，籃板球以48比30完胜大馬，禁區得分也以40比18取得絕對優勢，加上個別球員在外線屢有斬獲，大馬只能無奈接受失利的事實。</p>
+            <p>陳時和賽后說：“我們很努力的防守，可惜守到內線，卻防不到外線，而且我發現海山非常善于搶進攻籃板，球員的卡位和角度都很好。”</p>
+            <p>得力主力劉希曄打出25分10籃板的雙十表現，劉容杏三分球12投6中攻下22分，控衛潘姿呤貢獻20分6籃板5助攻，黃湘婷則有15分8籃板進帳。</p>
+            <p>海山主帥時超杰對球隊的表現感到滿意：“我們的防守和外線都發揮得不錯，進攻路線和防守轉換也做得很好，我給球隊打90分。”</p>
+            <p>大馬全場都在扮演追趕者的角色，上半場以25比43大幅落后，差距一度在第3節擴大至24分。盡管大馬末節絕地反攻曾追至65比73，可惜已氣力放盡，海山以一波20比2的終結性攻勢鎖定胜局。</p>
+            <p>陳時和說：“我們在縮小差距至8分后，沒有控制好節奏，也許球員體力不繼，結果讓對手几次輕松上籃重新拉開比分。相比廣州青年隊和海山高中，我們有很多東西可以向對方學習。”</p>
+            <p><span class="style11">中国报 葉正焮報導</span></p></td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t2" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

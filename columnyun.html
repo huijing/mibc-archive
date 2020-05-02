@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC 云之有物</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="云之有物" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" alt="Site Navigation" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" alt="随想随谈" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" alt="Schedule" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="842" border="0">
+    <tr>
+      <td width="7%" height="838" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/headeryun.png" alt="云之有物" width="215" height="71" /></p>
+      <table width="100%" border="0">
+          <tr>
+            <td height="35" colspan="2" bgcolor="#DBFCB6"><strong>10 October 2009...</strong></td>
+          </tr>
+          <tr>
+            <td width="23%"><img src="/site_files/szeyuin.jpg" alt="szeyuin" width="122" height="153" /></td>
+            <td width="77%"><br>对垒中国广州青年队，虽然在自家门口打比赛，赢了地利人和，却输给了心理压力。我希望对里面的年轻球员们，经过这次的球赛，学会如何调整自己的心理，提高自己的心理素质。她们必须学会如何克服赛前的压力，才能够让自己达到一个更高的篮球水平。</p>
+              <p>我也希望球队能够多参与类似这样的比赛，多习惯这种大赛的气氛。球员们，我们一起加油，努力吧！搞好自己的篮球技术与赛力，朝向更高的篮球领域迈进。</p>
+              <p>Although we are fortunate enough to be playing in front of a familiar setting and a home crowd, our girls were unable to get past the pressure of expectation. I hope that the younger players on the team can learn how to cope with such pressure in future and play their own game regardless of the situation.</p>
+            <p>I also hope that our team will be able to participate in more tournaments like this one, so the players, especially the younger ones, can get used to a big game atmosphere. We all have to work hard together to improve the fundamental skill level of the team in order to achieve greater heights.</p></td>
+          </tr>
+          <tr>
+            <td height="35" colspan="2" bgcolor="#DBFCB6"><strong>8 October 2009...</strong></td>
+          </tr>
+          <tr>
+            <td width="23%"><img src="/site_files/szeyuin.jpg" alt="szeyuin" width="122" height="153" /></td>
+            <td width="77%"><br>大马国际邀请赛第一天的比赛成功的展开了。六支来自各国的男篮队个别呈现出他们队伍的风格与个人的球技。而我本身特别欣赏台湾男篮队的球技。他们的个人技术与团队的默契，真的是值得我们的球员向他们学习。</p>
+              <p>在我观赛的当儿，脑海里出现了一个疑问。为什么我们同样是亚洲人，同样的一个种族，但是他们的体格却能练到这么健壮呢？而我们国家男女队同样的有进行力量训练，也同样有良好的设备，但是我们球队的体格总是较瘦小。我看我们必须向他们取经，看看有什么办法让我们的球队在力量及体力上有所进步，不要总是比别人来的逊色。</p>
+              <p>The first day of competition has succesfully gone by. All six teams from different nations showed off both their teamwork and individual skills. Personally, I find the Pure Youth Construction team from Chinese Taipei a pleasure to watch. Our players can learn a lot from watching them play.</p>
+              <p>As I was watching the competition, a thought flashed through my mind. Why is it that even though we are from the same ethnic group, the difference in body composition is so evident? The teams from Taipei and Hong Kong are extremely well-built and their players are strong and explosive. </p>
+              <p>We too have a structured weight-training program and adequate strength training facilities as well, however, both our men and women's teams seem to lack the physique and strength that other Asian teams possess. I think it is time we find out how they train so our players can better match up with them in terms of physical strength and explosiveness.</p></td>
+          </tr>
+          <tr>
+            <td height="35" colspan="2" bgcolor="#DBFCB6"><strong>5 October 2009...</strong></td>
+          </tr>
+          <tr>
+            <td><img src="/site_files/szeyuin.jpg" alt="szeyuin" width="122" height="153" /></td>
+            <td><br>离开大马国际邀请赛还有三天的时间。身为大马女篮副教练的我感到又兴奋又紧张。兴奋的是，达马女篮队很久没有在自己家门口亮相了，紧张的是球员们的表现会是如何呢？但我相信假如这批球员们能打出她们自己风格及本身的水平，那就很理想了。 <br />
+在此我希望各位爱好篮运的球迷们，多多支持大马国家女篮队吧！ </p>
+            <p>The MIBC is only 3 days away now, and as the Assistant Coach of the National Women's Team I am both excited and nervous. Mainly because it has been a long time since the women's team has had a chance to play in front of a home crowd and I'm also concerned about the performance of my players. However, I believe if they relax and play to the best of their own abilities, they'll do just fine. <br />
+            I hope that all the basketball fans out there will show their support for the women's team when the tournament starts.</p></td>
+          </tr>
+      </table>
+      </p></td>
+    </tr>
+  </table>
+  <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

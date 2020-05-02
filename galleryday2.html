@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Generator" content="Pranas.NET Web Gallery Creator">
+<script src="/lightbox/js/prototype.js" type="text/javascript"></script>
+<script src="/lightbox/js/scriptaculous.js?load=effects" type="text/javascript"></script>
+<script src="/lightbox/js/lightbox.js" type="text/javascript"></script>
+<link rel="stylesheet" href="lightbox/css/lightbox.css" type="text/css" media="screen">
+<link rel="stylesheet" href="library/thumbs.css" type="text/css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC Photo Gallery</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style6 {
+	font-size: 18px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="gallery" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="80" border="0">
+    <tr>
+      <td width="7%" height="76" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p>
+      <a name="gallery"><img src="/site_files/photogallery.gif" width="215" height="71" />
+      </p>
+       <!--  Pranas.NET Web Gallery Start -->
+<div id='divWG'>
+<table id="tblThumbsLayout" cellpadding="0" cellspacing="6">
+<tr>
+<td id='topCell' colspan='4'>
+<div id='divNav'><a href='gallery.htm' class="type10bbr" id='linkHome'>home</a> &gt; <span id='currentGalleryLocation'>Day 2</span></div>
+<table id='tblGalleryName' cellpadding=0 cellspacing=0 border=0 width="100%">
+<tr>
+<td id='galleryNameCell'>&nbsp;</td>
+<td id='pagingCell'>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class='tdImg'><a href='photos/CHN_PHIL&#32;(10).JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL&#32;(10).JPG" alt="CHN_PHIL (10)"></a><br>CHN_PHIL (10) <a class='linkHiRes' href='source/CHN_PHIL&#32;(10).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/CHN_PHIL&#32;(11).JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL&#32;(11).JPG" alt="CHN_PHIL (11)"></a><br>CHN_PHIL (11) <a class='linkHiRes' href='source/CHN_PHIL&#32;(11).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/CHN_PHIL&#32;(12).JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL&#32;(12).JPG" alt="CHN_PHIL (12)"></a><br>CHN_PHIL (12) <a class='linkHiRes' href='source/CHN_PHIL&#32;(12).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/CHN_PHIL&#32;(13).JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL&#32;(13).JPG" alt="CHN_PHIL (13)"></a><br>CHN_PHIL (13) <a class='linkHiRes' href='source/CHN_PHIL&#32;(13).JPG'>hi-res</a>
+</td>
+</tr>
+<tr>
+<td class='tdImg'><a href='photos/CHN_PHIL&#32;(14).JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL&#32;(14).JPG" alt="CHN_PHIL (14)"></a><br>CHN_PHIL (14) <a class='linkHiRes' href='source/CHN_PHIL&#32;(14).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/CHN_PHIL&#32;(2).JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL&#32;(2).JPG" alt="CHN_PHIL (2)"></a><br>CHN_PHIL (2) <a class='linkHiRes' href='source/CHN_PHIL&#32;(2).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='/photos/CHN_PHIL&#32;(3).JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL&#32;(3).JPG" alt="CHN_PHIL (3)"></a><br>CHN_PHIL (3) <a class='linkHiRes' href='source/CHN_PHIL&#32;(3).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/CHN_PHIL&#32;(4).JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL&#32;(4).JPG" alt="CHN_PHIL (4)"></a><br>CHN_PHIL (4) <a class='linkHiRes' href='source/CHN_PHIL&#32;(4).JPG'>hi-res</a>
+</td>
+</tr>
+<tr>
+<td class='tdImg'><a href='photos/CHN_PHIL&#32;(5).JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL&#32;(5).JPG" alt="CHN_PHIL (5)"></a><br>CHN_PHIL (5) <a class='linkHiRes' href='source/CHN_PHIL&#32;(5).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/CHN_PHIL&#32;(6).JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL&#32;(6).JPG" alt="CHN_PHIL (6)"></a><br>CHN_PHIL (6) <a class='linkHiRes' href='source/CHN_PHIL&#32;(6).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/CHN_PHIL&#32;(7).JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL&#32;(7).JPG" alt="CHN_PHIL (7)"></a><br>CHN_PHIL (7) <a class='linkHiRes' href='source/CHN_PHIL&#32;(7).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/CHN_PHIL&#32;(8).JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL&#32;(8).JPG" alt="CHN_PHIL (8)"></a><br>CHN_PHIL (8) <a class='linkHiRes' href='source/CHN_PHIL&#32;(8).JPG'>hi-res</a>
+</td>
+</tr>
+<tr>
+<td class='tdImg'><a href='photos/CHN_PHIL&#32;(9).JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL&#32;(9).JPG" alt="CHN_PHIL (9)"></a><br>CHN_PHIL (9) <a class='linkHiRes' href='source/CHN_PHIL&#32;(9).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/CHN_PHIL.JPG' rel='lightbox[gallery]'><img src="thumbs/CHN_PHIL.JPG" alt="CHN_PHIL"></a><br>CHN_PHIL <a class='linkHiRes' href='source/CHN_PHIL.JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/KOR_TPE&#32;(10).JPG' rel='lightbox[gallery]'><img src="thumbs/KOR_TPE&#32;(10).JPG" alt="KOR_TPE (10)"></a><br>KOR_TPE (10) <a class='linkHiRes' href='source/KOR_TPE&#32;(10).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/KOR_TPE&#32;(11).jpg' rel='lightbox[gallery]'><img src="thumbs/KOR_TPE&#32;(11).jpg" alt="KOR_TPE (11)"></a><br>KOR_TPE (11) <a class='linkHiRes' href='source/KOR_TPE&#32;(11).jpg'>hi-res</a>
+</td>
+</tr>
+<tr>
+<td class='tdImg'><a href='photos/KOR_TPE&#32;(2).JPG' rel='lightbox[gallery]'><img src="thumbs/KOR_TPE&#32;(2).JPG" alt="KOR_TPE (2)"></a><br>KOR_TPE (2) <a class='linkHiRes' href='source/KOR_TPE&#32;(2).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/KOR_TPE&#32;(3).JPG' rel='lightbox[gallery]'><img src="thumbs/KOR_TPE&#32;(3).JPG" alt="KOR_TPE (3)"></a><br>KOR_TPE (3) <a class='linkHiRes' href='source/KOR_TPE&#32;(3).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/KOR_TPE&#32;(4).JPG' rel='lightbox[gallery]'><img src="thumbs/KOR_TPE&#32;(4).JPG" alt="KOR_TPE (4)"></a><br>KOR_TPE (4) <a class='linkHiRes' href='source/KOR_TPE&#32;(4).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/KOR_TPE&#32;(5).JPG' rel='lightbox[gallery]'><img src="thumbs/KOR_TPE&#32;(5).JPG" alt="KOR_TPE (5)"></a><br>KOR_TPE (5) <a class='linkHiRes' href='source/KOR_TPE&#32;(5).JPG'>hi-res</a>
+</td>
+</tr>
+<tr>
+<td class='tdImg'><a href='photos/KOR_TPE&#32;(6).JPG' rel='lightbox[gallery]'><img src="thumbs/KOR_TPE&#32;(6).JPG" alt="KOR_TPE (6)"></a><br>KOR_TPE (6) <a class='linkHiRes' href='source/KOR_TPE&#32;(6).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/KOR_TPE&#32;(7).JPG' rel='lightbox[gallery]'><img src="thumbs/KOR_TPE&#32;(7).JPG" alt="KOR_TPE (7)"></a><br>KOR_TPE (7) <a class='linkHiRes' href='source/KOR_TPE&#32;(7).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/KOR_TPE&#32;(8).JPG' rel='lightbox[gallery]'><img src="thumbs/KOR_TPE&#32;(8).JPG" alt="KOR_TPE (8)"></a><br>KOR_TPE (8) <a class='linkHiRes' href='source/KOR_TPE&#32;(8).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/KOR_TPE&#32;(9).JPG' rel='lightbox[gallery]'><img src="thumbs/KOR_TPE&#32;(9).JPG" alt="KOR_TPE (9)"></a><br>KOR_TPE (9) <a class='linkHiRes' href='source/KOR_TPE&#32;(9).JPG'>hi-res</a>
+</td>
+</tr>
+<tr>
+<td class='tdImg'><a href='photos/KOR_TPE.JPG' rel='lightbox[gallery]'><img src="thumbs/KOR_TPE.JPG" alt="KOR_TPE"></a><br>KOR_TPE <a class='linkHiRes' href='source/KOR_TPE.JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/MAS_HKC&#32;(10).JPG' rel='lightbox[gallery]'><img src="thumbs/MAS_HKC&#32;(10).JPG" alt="MAS_HKC (10)"></a><br>MAS_HKC (10) <a class='linkHiRes' href='source/MAS_HKC&#32;(10).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/MAS_HKC&#32;(11).JPG' rel='lightbox[gallery]'><img src="thumbs/MAS_HKC&#32;(11).JPG" alt="MAS_HKC (11)"></a><br>MAS_HKC (11) <a class='linkHiRes' href='source/MAS_HKC&#32;(11).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/MAS_HKC&#32;(12).JPG' rel='lightbox[gallery]'><img src="thumbs/MAS_HKC&#32;(12).JPG" alt="MAS_HKC (12)"></a><br>MAS_HKC (12) <a class='linkHiRes' href='source/MAS_HKC&#32;(12).JPG'>hi-res</a>
+</td>
+</tr>
+<tr>
+<td class='tdImg'><a href='photos/MAS_HKC&#32;(13).JPG' rel='lightbox[gallery]'><img src="thumbs/MAS_HKC&#32;(13).JPG" alt="MAS_HKC (13)"></a><br>MAS_HKC (13) <a class='linkHiRes' href='source/MAS_HKC&#32;(13).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/MAS_HKC&#32;(2).JPG' rel='lightbox[gallery]'><img src="thumbs/MAS_HKC&#32;(2).JPG" alt="MAS_HKC (2)"></a><br>MAS_HKC (2) <a class='linkHiRes' href='source/MAS_HKC&#32;(2).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/MAS_HKC&#32;(3).JPG' rel='lightbox[gallery]'><img src="thumbs/MAS_HKC&#32;(3).JPG" alt="MAS_HKC (3)"></a><br>MAS_HKC (3) <a class='linkHiRes' href='source/MAS_HKC&#32;(3).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/MAS_HKC&#32;(4).JPG' rel='lightbox[gallery]'><img src="thumbs/MAS_HKC&#32;(4).JPG" alt="MAS_HKC (4)"></a><br>MAS_HKC (4) <a class='linkHiRes' href='source/MAS_HKC&#32;(4).JPG'>hi-res</a>
+</td>
+</tr>
+<tr>
+<td class='tdImg'><a href='photos/MAS_HKC&#32;(5).JPG' rel='lightbox[gallery]'><img src="thumbs/MAS_HKC&#32;(5).JPG" alt="MAS_HKC (5)"></a><br>MAS_HKC (5) <a class='linkHiRes' href='source/MAS_HKC&#32;(5).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/MAS_HKC&#32;(6).JPG' rel='lightbox[gallery]'><img src="thumbs/MAS_HKC&#32;(6).JPG" alt="MAS_HKC (6)"></a><br>MAS_HKC (6) <a class='linkHiRes' href='source/MAS_HKC&#32;(6).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/MAS_HKC&#32;(7).JPG' rel='lightbox[gallery]'><img src="thumbs/MAS_HKC&#32;(7).JPG" alt="MAS_HKC (7)"></a><br>MAS_HKC (7) <a class='linkHiRes' href='source/MAS_HKC&#32;(7).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/MAS_HKC&#32;(8).JPG' rel='lightbox[gallery]'><img src="thumbs/MAS_HKC&#32;(8).JPG" alt="MAS_HKC (8)"></a><br>MAS_HKC (8) <a class='linkHiRes' href='source/MAS_HKC&#32;(8).JPG'>hi-res</a>
+</td>
+</tr>
+<tr>
+<td class='tdImg'><a href='photos/MAS_HKC&#32;(9).JPG' rel='lightbox[gallery]'><img src="thumbs/MAS_HKC&#32;(9).JPG" alt="MAS_HKC (9)"></a><br>MAS_HKC (9) <a class='linkHiRes' href='source/MAS_HKC&#32;(9).JPG'>hi-res</a>
+</td>
+<td class='tdImg'><a href='photos/MAS_HKC.JPG' rel='lightbox[gallery]'><img src="thumbs/MAS_HKC.JPG" alt="MAS_HKC"></a><br>MAS_HKC <a class='linkHiRes' href='source/MAS_HKC.JPG'>hi-res</a>
+</td>
+</tr>
+<tr>
+<td id='pnCell' colspan='4'>
+<a class='pn' href='http://pranas.net/WebGalleryCreator/'>Created using LightBox Web Gallery Generator</a>
+</td>
+</tr>
+</table>
+</div>
+
+<!-- Pranas.NET Web Gallery End -->      </td>
+    </tr>
+   
+  </table>
+  
+  <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

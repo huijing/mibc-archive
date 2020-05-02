@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style7 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style10 {
+	font-size: 13px;
+	font-style: italic;
+}
+.style11 {
+	font-size: 14px;
+	font-style: italic;
+}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" colspan="2" bgcolor="#BBFFC7"><span class="style7">08.10.2009 Another rout for the Chinese Taipei Pure Youth Construction team</span></td>
+          </tr>
+          <tr>
+            <td><span class="style10"><br />by Chen Hui Jing</span><br>
+              <p>What do you do when your opponents are bigger, faster and stronger than you? This thought must have crossed the minds of the college team from Korea during the second day of the MIBC. The Pure Youth Construction team from Chinese Taipei were undoubtedly in a league of their own tonight. </p>
+              <p>For the second night in a row, the team from Taipei overwhelmed their opponents with their tough defense and lightning-quick fast-breaks. It was another blow-out victory for the Pure Youth team, who won the game with a score of 101-73.
+                The Pure Youth team was completely in control of the game from the get-go and started the match with a 12-0 run. </p>
+              <p>The Taiwanese forced their younger Korean counterparts to turn the ball over with their aggressive defense and the Koreans seemed rattled, with 12 turnovers in the first quarter alone. The first quarter ended with a 30-11 scoreline in favour of the Taiwanese.                </p>
+              <p>The Pure Youth team's starters sat out most of the second quarter and the Koreans rallied back to cut the lead to 12, but 12 points would be as close as the Koreans would get.</p>
+              <p> It was clear that the Chosun University boys were no match for the professionally-trained Pure Youth squad. The favourites pulled away to win the game with a comfortable margin of 28 points.                </p>
+              <p>The Pure Youth team had 5 players scoring in double-figures, with Chang Yu-Lin leading the way with 19 points and 6 steals. Lin Chin-Pang and Tso Tsung-Kai added 15 points and 14 points respectively. The Pure Youth team outrebounded the Koreans 41-28. The Chosun University boys were forced into committing 24 turnovers, most of them as a result of the aggressive defense by the Taiwanese.</p>
+              <p>The Koreans had two players with double-digit scoring. Center, Lee Dae Yeon was the top-scorer of both teams with 24 points and 5 rebounds. Kim Dong Woo also contributed 15 points and 8 rebounds. </p>
+            </p></td>
+            <td><div align="right">
+              <p></p>
+              <p><img src="/site_files/kor_tpe_article.JPG" alt="KOR vs TPE" width="200" height="273" align="top" /></p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div></td>
+          </tr>
+          <tr>
+            <td colspan="2"><p><strong>实力一枝独秀 台璞园可望封王</strong></p>
+              <p class="style11"> 南洋商报</p>
+              <p>参战大马国际邀请赛的6支男队周三已悉数登场，实力露底，上届因负主队大马5分而屈居亚军的中华台北璞园建设队，实力一枝独秀，是摘冠首号大热门。              </p>
+              <p>璞园队上届多名主将缺阵，但打出绝佳攻守飞快球风。本届，去年骁将蔡文诚、吴建龙、洪志善、黄启峰、陈世杰、林宗庆和林金榜全在阵，且获3名主力级好手毛加恩、张羽霖和左从凯增强实力，首仗虽尚未发挥最高战斗力，却已足以以108比68大挫菲律宾次级联赛PBL亚军法乐仕。              </p>
+              <p>这支台队良将之多冠全场，且身高不俗，即使遇上人更高的中国珠海免税集团，胜算无疑极高。              </p>
+              <p>大胜菲队40分
+                
+                大胜菲队40分，璞园主帅许晋哲仍然不感满意。“去年我们主力没来齐，但打得非常积极，球风佳。这次人齐，胜菲之役却打得不好，失误多，特别是第一、三节时。我们的3个矮个子控球手都打得不好，令我不得不把大前锋毛加恩改打其他位置。菲队命中率高，也使到我们的快攻路线没打出来。比较之下，此役表现不及去年。”              </p>
+              <p>全场稳将菲队控制住，许晋哲都尚未能满意，璞园潜力之佳，由此可见一斑。              </p>
+              <p>反观菲队华裔主帅林江柏，输得心服口服。“我们打得很糟糕，失误很多，守不住璞园的快攻，防守篮板也抢输。”              </p>
+              <p>“说真的，队中4名好手被PBA职业队挑走之后，即使我们发挥至最佳，也也未必能赢璞园，他们胜得合理。毛加恩球星味道十足，他和吴建龙等人令我们穷于应付。”              </p>
+              <p>在首日获胜的3队中，卫冕队大马实力远不及去年，首仗虽胜珠海队25分，但本届少了两名高大技佳外援，在多名好手缺勤，以及决心多用人高而经验和技术均尚嫩的年轻本地姜下，实力跟璞园不同级。</p>
+              <p> 韩国的朝鲜大学首仗演出让人失望，缺杰出球员，身高和体格没特点，传统狠辣攻守和神准外投威力不见，被港队守得难外投，有准绳的射手不多，负香港一队13分后，基本上已掉出争冠行列。</p>
+            <p> 如今看来，只有港队较有机会跟璞园争冠。但比较之下，璞园在攻守速度和将源占上风，港队想胜璞园绝非易事，非要有绝佳临场演出不可。</p></td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t2" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

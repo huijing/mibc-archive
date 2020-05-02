@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC - Women's Team Analysis</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style11 {font-size: 18px; font-weight: bold; color: #330000; }
+.style12 {
+	color: #FF3300;
+	font-weight: bold;
+}
+.style13 {
+	font-family: "Anja Eliane";
+	font-size: 24px;
+}
+.style14 {font-size: 14px}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="womensteams" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" alt="Site Navigation" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" alt="随想随谈" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" alt="Schedule" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p>
+      <a name="teamanalysis"><img src="/site_files/teamanalysis.png" alt="Team Analysis" width="215" height="71" /></p>
+        <p align="center" class="style13">WOMEN'S TEAMS</p>
+        <table width="100%" border="0">
+          <tr>
+            <td width="100%" height="48" bgcolor="#FFDFAE"><a name="chn">
+            <div align="center" class="style11">CHINA GUANGZHOU YOUTH TEAM<br>广州青年队</div></td>
+          </tr>
+          <tr>
+            <td><p class="style14">平均年龄才16.5岁，但阵中有5名国手级人马，广州青年队准备给大姐姐们见识“初生之犊”的实力。 </p>
+            <p class="style14">广州青年队是一支年轻有朝气的球队，年纪最大的才18岁，而且还带来了两名年仅12岁的小将，王禛就身高1米92，是队中的第2高人，全队平均身高1米81，肯定给对手在篮底带来威胁。 </p>
+            <p class="style14">近年来，他们代表广东队参加全国青年赛和全国俱乐部比赛，获得多个冠军，为广东省和国家队输送大批优秀篮球人才。 </p>
+            <p class="style14">目前代表中国国家编外人员关馨、魏伟、黄红玭等人都是出自广州青年队。 </p>
+            <p class="style14">这次随队前来吉隆坡的邱思玥是国青女篮队员，于东、崔洪杨、杨晰和杨力维等人则是国少队的球员，虽然欠缺大赛，但经过系统性的磨练后，这批小将随时给大姐姐们杀个措手不及。</p></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFEAF4"><br />
+              <p>If there was a youngest team award – it will certainly go to Guangzhou Youth Team! </p>
+              <p>With an average age of 16 years old and having two players aged 12 in the squad, the team certainly raises eyebrows as they compete against some of the stronger teams in the region in the Malaysian International Basketball Championship (MIBC). </p>
+              <p>Yet, the team has five national junior players and they represent the Guangdong Province in all National Junior Championships and National Junior Club Championships. And it gets better, they have been winning such titles in the past. </p>
+              <p>With a large pool of talents to choose from, the team is now seen as a factory – churning out players for the national women’s team.
+                
+                Surprisingly, the Guangzhou lasses are also the tallest team in the MIBC – with an average height of 181 centimeters.</p>
+            <p> Although the youngsters lack international exposure, the girls from Guangzhou are ready to challenge their elder ‘sisters’ from Singapore, Chinese Taipei and even Malaysia!</p>              </td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="teamrosters.htm#teamanalysis"><img src="/site_files/icon_gotop.gif" alt="BACK" width="33" height="14" /></a></div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="48" bgcolor="#FFDFAE"><a name="tpe"><div align="center" class="style11">CHINESE TAIPEI<br>中华台北海山高中</div></td>
+          </tr>
+          <tr>
+            <td height="38"><p class="style14">连续3年夺得高中篮球联赛（ＨＢＬ）冠军，台北县立海山高级中学非泛泛之辈，放眼在2009年马来西亚国际篮球邀请赛打出一片春天。 </p>
+              <p class="style14">在2006、07和08年连续三年称霸后，海山高中成为HBL高中篮球联赛史上唯一完成三连霸霸业的球队，成为当地非常著名的高中女篮队。虽然在今年卫冕失败，但多名主力入选亚青队，表现抢眼。 </p>
+              <p class="style14">在2008年拿下高中篮球联赛拿下抄截后殊荣的徐千惠是球队的核心人物，不仅当选亚青国手，还在今年当选中华代表队培训队员，代表参加在贝尔格拉德举行的世界大学生运动会和琼斯杯女篮赛，相信在这名大姐带领下，其他“9字辈”的队友可以放手一搏。 </p>
+            <p class="style14">身高1米72的刘希晔是今年高中篮球联赛的篮板后，潘姿吟则荣膺助攻后，两人联袂刘容杏和黄湘婷一起一起入选亚青队，相信经过实战和训练后，可以为海山高中带来更精彩的演出。</p>              </td>
+          </tr>
+          <tr>
+            <td height="38" bgcolor="#FFEAF4"><br />
+              <p>Here's another example of age is just a number. </p>
+              <p> While most of their opposing teams will have a blend of youngsters and experienced players, the Han-Shan High School comprises of youths who are eager to teach their experienced counterparts a thing or two about basketball. </p>
+            <p>The high school cagers are three time champions of the Chinese Taipei High School Basketball League (HBL) from 2006 to 2008 en route to inking their names into the history books as the only team to net three consecutive titles. </p>
+            <p>While they failed to defend their title in this year's edition, Han-Shan remains the top high school basketball team in Chinese Taipei. The high school team will have 2008 HBL top steal winner Hsu Chien-Hui to bank on. Chien-Hui is also the national youth player and has even trained with the senior national team thanks to her excellent performance in the HBL. </p>
+            <p>Chien-Hui also represented Chinese Taipei in the World University Games in Belgrade and the William Jones Cup in Taipei.
+              
+              She is set to let her team mates in the Malaysian International Basketball Championship (MIBC). </p>
+            <p>Also part of the squad include Liu His-Yeh, the 2009 HBL top rebounder, Pan Taz-Yin (2009 HBL top assist), Liu Jung-Hsing and Huang Hsiang-Ting. All four of them are part of the national youth team and they will be instrumental in Han-Shan's campaign at the MIBC.</p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="teamrosters.htm#teamanalysis"><img src="/site_files/icon_gotop.gif" alt="BACK" width="33" height="14" /></a></div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="48" bgcolor="#FFDFAE"><a name="mas"><div align="center" class="style11">MALAYSIA WOMEN'S TEAM<br>马来西亚女子队</div></td>
+          </tr>
+          <tr>
+            <td height="38" class="style14"><p>虽然亚洲锦标赛升级梦碎，但夺得乙组冠军已让大马女篮信心满满，准备在自家门前举行的马来西亚国际篮球邀请赛打出好球，回馈忠实球迷。
+              
+              </p>
+              <p>回到主场布阵的大马女篮，主帅陈时和保留大部份的主力，队长邱淑媚、吴明凤和彭燕燕等人将继续领令上阵，不过也借助主场的优势，大胆采取两名18岁小将苏苇颖和叶晶儿，以得到国际赛的曝光机会。              </p>
+              <p>在亚洲赛先负菲律宾后，连挫乌兹别克、黎巴嫩、哈萨克和斯里兰卡后，大马女篮以4胜1负夺得乙组冠军，可是在升级附加赛不断主队印度而功败垂成，连续两届升级失败，不过陈时和对球员们的表现深感满意，而且也没给众女将定下本届国际邀请赛的任何目标，因为连续打出几场好球后，状态难免会滑落。              </p>
+              <p>他准备用这次的比赛练兵，让年轻小将有机会曝光，同时也尝试不同的组合配搭，利用经验丰富的老将带领新人一起上阵，为接班的工作提前做好准备，但他依然叮咛球员们，必须在这次的比赛打出精彩好球，给主场的球迷一个交代。            </p>
+            <p>面对年纪小但体格高的广州青年队、获得3名中国归化战将助阵的新加坡和阵中不乏国手助阵的台北海山高中，虽然大马女篮大赛经验占上风，可是3支对手都不能轻视，随时会在自家门前上演滑铁卢。</p></td>
+          </tr>
+          <tr>
+            <td height="38" bgcolor="#FFEAF4" ><br />
+              <p>Winning the inaugural title would certainly be a fitting belated birthday present for Kew Suik May.              </p>
+              <p>As Suik May turned 27 on Sept 30, the national skipper is determined to guide her junior counterparts as the Malaysian team take on some of the the region's finest clubs in the Malaysian International Basketball Championship (MIBC).              </p>
+              <p>“The team mostly comprises of young players and they still have a lot to learn,” admitted Suik May.
+                “We still have time to work on our weaknesses and will be prepared for the MIBC.”
+                Suik May aided the Malaysian women's team to a goal medal at the 2003 Vietnam SEA Games and the 2007 Korat SEA Games.              </p>
+              <p>The KL lass, together with seasoned campaigners Goh Beng Fong and Pee Yann Yann, were instrumental in Malaysia's campaign at the recent FIBA-ASIA Championship for Women held in Chennai, India.
+                “I'm not too sure how long more I'll be with the national team but I have my faith in the young players. I know that the more they play together, they will gel well and perform better on court.”              </p>
+              <p>When asked who among the younger players would be able to replace her position, the sharp shooter added:
+                “I guess everyone is able to do so. When the seniors leave, this will make room for the juniors to have more playing time and will result in them improving on their offense and defense.”            </p>
+            <p>With a perfect blend of young and experienced players, the host team are bent on giving a good impression in front of the local fans. Winning the title would be a fitting celebration for Suik May and company.</p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="teamrosters.htm#teamanalysis"><img src="/site_files/icon_gotop.gif" alt="BACK" width="33" height="14" /></a></div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="48" bgcolor="#FFDFAE"><a name="sin"><div align="center" class="style11">SINGAPORE HOME UNITED BASKETBALL CLUB<br>新加坡内政群英</div></td>
+          </tr>
+          <tr>
+            <td height="38" class="style14"><p>连续两年夺得新加坡女子联赛冠军（WNBL）的新加坡内政群英，以经验丰富的老将带领众年轻小将出击第2届国际篮球邀请赛，抱着低姿态上阵，准备给对手迎头痛击。
+              
+              结合中国、日本及新加坡本地好手的内政群英，连续夺得2008和09年的女子联赛冠军，并在2007年荣膺美禄杯冠军。              </p>
+              <p>队中只有3人年龄超过30岁，其余战将平均年龄约22岁，担任主帅的前国手陈羽蓁身兼双职，在关键时刻必会出手相助，是稳住军心的救命稻草。
+                
+                曾在2003年协助新加坡夺得东运女篮银牌的姚修修、张姝和赵婧，是原籍中国的归化球员，3人都才21岁，加上本土国手方淑雯和李雪玲，具备一定的夺冠实力。              </p>
+              <p>他们在今年6月的吉隆坡国际男女篮球赛力退以大马国油上阵的国青队和吉隆坡A、B队，取得3战全胜的不败之身夺冠。
+                
+            此次信心满满踏足吉隆坡，内政群英已做好准备要在吉隆坡凯旋而归，是一匹来势汹汹的黑马。</p></td>
+          </tr>
+          <tr>
+            <td height="38" bgcolor="#FFEAF4"><br />
+              <p>It looks like Singapore based Home United Basketball Club (HUBC) is on a 'spying' mission – to learn, plan and neutralise its opponents in the Malaysian International Basketball Championship. 
+              </p>
+              <p>The team is made up of officials and players from almost every uniformed authority including the Singapore Police Force, Singapore Civil Defence Force, Immigration and Checkpoints Authority and Prisons Department.
+                The club originated from the Home United Basketball Team which was formed in 1999 to promote the sport and reach out to the community in pursuant of their mission to maintain safety and security in the Republic.              </p>
+              <p>HUBC are certainly a celebrated bunch at home as evident in their victorious outing in this year's Singapore Basketball Association Women National Basketball League 'Open' which ended in May.
+            HUBC will certainly maintain their fort well and come with guns blazing as they utilise all possible options to take down their arch rivals on the courts. </p>
+            <p>With a good blend of players and armed with a good tactical approach, HUBC are sure contenders of the title.</p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="teamrosters.htm#teamanalysis"><img src="/site_files/icon_gotop.gif" alt="BACK" width="33" height="14" /></a></div>
+          </table>        
+      </td>
+    </tr>
+  </table>
+  <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

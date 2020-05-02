@@ -1,0 +1,1195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC - Men's Team Rosters</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style11 {font-size: 18px; font-weight: bold; color: #330000; }
+.style12 {
+	color: #FF3300;
+	font-weight: bold;
+}
+.style14 {
+	font-family: "Anja Eliane";
+	font-size: 24px;
+}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="mensteams" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" alt="Site Navigation" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" alt="随想随谈" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" alt="Schedule" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p>
+      <a name="teamrosters"><img src="/site_files/teamrosters.gif" alt="Team Rosters" width="215" height="71" /></p>
+        <p align="center" class="style14">MEN'S TEAMS</p>
+        <table width="100%" border="0">
+          <tr>
+            
+            <td height="48" colspan="4" bgcolor="#FFDFAE"><a name="chn">
+            <div align="center" class="style11">CHINA ZHUHAI DUTY FREE ENTERPRISE GROUP<br>中国珠海免税集团篮球队</div></td>
+          </tr>
+          <tr>
+            <td height="38" colspan="4"><span class="style12">Team Officials:</span></td>
+          </tr>
+          <tr>
+            <td width="7%">&nbsp;</td>
+            <td width="28%">Team Leader:</td>
+            <td width="29%">Huang Zhentang</td>
+            <td width="36%">黄振堂</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Team Manager:</td>
+            <td>Liang Huiping</td>
+            <td>梁惠平</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Head Coach:</td>
+            <td>Wu Manting</td>
+            <td>吴满庭</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Officer:</td>
+            <td>Huang Rongfeng</td>
+            <td>黄荣锋</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Officer:</td>
+            <td>Chen Yaxing</td>
+            <td>陈亚星</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Officer:</td>
+            <td>Yao Feihu</td>
+            <td>姚飞虎</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="38" colspan="4" class="style12">Players:</td>
+          </tr>
+          <tr>
+            <td colspan="4"><table width="100%" border="0">
+              <tr>
+                <td width="6%">&nbsp;</td>
+                <td width="11%" bgcolor="#FAFC9E"><div align="center">No.</div></td>
+                <td colspan="2" bgcolor="#FAFC9E"><div align="center">Name</div></td>
+                <td width="18%" bgcolor="#FAFC9E"><div align="center">D.O.B.</div></td>
+                <td width="12%" bgcolor="#FAFC9E"><div align="center">Height</div></td>
+                <td width="14%" bgcolor="#FAFC9E"><div align="center">Position</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">4</div></td>
+                <td width="15%" bgcolor="#ECF1FF"><div align="center">张继兴</div></td>
+                <td width="24%" bgcolor="#ECF1FF">Zhang Ji Xing</td>
+                <td bgcolor="#ECF1FF"><div align="center">07-08-1983</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">190cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">5</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">张辉</div></td>
+                <td bgcolor="#ECF1FF">Zhang Hui</td>
+                <td bgcolor="#ECF1FF"><div align="center">21-08-1986</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">190cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">6</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">曲绍华</div></td>
+                <td bgcolor="#ECF1FF">Qu Shaohua</td>
+                <td bgcolor="#ECF1FF"><div align="center">05-01-1979</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">186cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">7</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">林国华</div></td>
+                <td bgcolor="#ECF1FF">Lin Guohua</td>
+                <td bgcolor="#ECF1FF"><div align="center">19-06-1986</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">187cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">9</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">郑泽铭</div></td>
+                <td bgcolor="#ECF1FF">Zheng Zeming</td>
+                <td bgcolor="#ECF1FF"><div align="center">15-05-1982</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">178cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">10</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">李晋</div></td>
+                <td bgcolor="#ECF1FF">Lin Jin</td>
+                <td bgcolor="#ECF1FF"><div align="center">24-10-1984</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">202cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">11</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">刘海龙</div></td>
+                <td bgcolor="#ECF1FF">Liu Hailong</td>
+                <td bgcolor="#ECF1FF"><div align="center">01-05-1982</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">196cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">12</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">孙忠诚</div></td>
+                <td bgcolor="#ECF1FF">Sun Zhongcheng</td>
+                <td bgcolor="#ECF1FF"><div align="center">26-01-1979</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">204cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">13</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">李文峰</div></td>
+                <td bgcolor="#ECF1FF">Li Wenfeng</td>
+                <td bgcolor="#ECF1FF"><div align="center">15-01-1981</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">193cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">14</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">廖康成</div></td>
+                <td bgcolor="#ECF1FF">Liao Kangcheng</td>
+                <td bgcolor="#ECF1FF"><div align="center">07-12-1986</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">188cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">15</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">赵仁斌</div></td>
+                <td bgcolor="#ECF1FF">Zhao Renbin</td>
+                <td bgcolor="#ECF1FF"><div align="center">24-12-1975</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">210cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">16</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">林国镇</div></td>
+                <td bgcolor="#ECF1FF">Lin Guozhen</td>
+                <td bgcolor="#ECF1FF"><div align="center">18-12-1981</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">185cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td colspan="4"><div align="right"><a href="teamrosters.htm#teamrosters"><img src="/site_files/icon_gotop.gif" width="33" height="14" /></a></div></td>
+          </tr>
+          <tr>
+            <td colspan="4">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="48" colspan="4" bgcolor="#FFDFAE"><a name="tpe">
+            <div align="center" class="style11">CHINESE TAIPEI PURE YOUTH CONSTRUCTION TEAM<br>中华台北璞园建筑</div></td>
+          </tr>
+          <tr>
+            <td height="38" colspan="4" class="style12">Team Officials:</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Team Manager:</td>
+            <td>Hung Chih-Hu</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Head Coach:</td>
+            <td>Hsu Chin-Ghe</td>
+            <td>许晋哲</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Assistant Coach:</td>
+            <td>Liu Yi-Shiang</td>
+            <td>刘义祥</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Assistant Coach:</td>
+            <td>Chung Wei-Kuo</td>
+            <td>钟维国</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Physiotherapist:</td>
+            <td>Peng Li-Chen</td>
+            <td>彭丽贞</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="38" colspan="4" class="style12">Players:</td>
+          </tr>
+          <tr>
+            <td colspan="4"><table width="100%" border="0">
+              <tr>
+                <td width="6%">&nbsp;</td>
+                <td width="11%" bgcolor="#FAFC9E"><div align="center">No.</div></td>
+                <td colspan="2" bgcolor="#FAFC9E"><div align="center">Name</div></td>
+                <td width="18%" bgcolor="#FAFC9E"><div align="center">D.O.B.</div></td>
+                <td width="14%" bgcolor="#FAFC9E"><div align="center">Height</div></td>
+                <td width="12%" bgcolor="#FAFC9E"><div align="center">Position</div></td>
+              </tr>
+              
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">5</div></td>
+                <td width="15%" bgcolor="#ECF1FF">洪志善</td>
+                <td width="24%" bgcolor="#ECF1FF">Hung Chih-Shan</td>
+                <td bgcolor="#ECF1FF"><div align="center">05-07-1985</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">176cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">6</div></td>
+                <td bgcolor="#ECF1FF">陈世杰</td>
+                <td bgcolor="#ECF1FF">Chen Chia-Chieh</td>
+                <td bgcolor="#ECF1FF"><div align="center">24-09-1984</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">176cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">7</div></td>
+                <td bgcolor="#ECF1FF">林宗庆</td>
+                <td bgcolor="#ECF1FF">Lin Tsung-Ching</td>
+                <td bgcolor="#ECF1FF"><div align="center">22-04-1986</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">188cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">25</div></td>
+                <td bgcolor="#ECF1FF">陈俊杰</td>
+                <td bgcolor="#ECF1FF">Chen Chun-Chien</td>
+                <td bgcolor="#ECF1FF"><div align="center">04-06-1983</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">184cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">1</div></td>
+                <td bgcolor="#ECF1FF">左从凯</td>
+                <td bgcolor="#ECF1FF">Tso Tsung-Kai</td>
+                <td bgcolor="#ECF1FF"><div align="center">15-09-1986</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">190cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">14</div></td>
+                <td bgcolor="#ECF1FF">蔡文诚</td>
+                <td bgcolor="#ECF1FF">Tsai Wen-Cheng</td>
+                <td bgcolor="#ECF1FF"><div align="center">31-05-1985</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">190cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">15</div></td>
+                <td bgcolor="#ECF1FF">林焕超</td>
+                <td bgcolor="#ECF1FF">Lin Huan-Chao</td>
+                <td bgcolor="#ECF1FF"><div align="center">18-04-1985</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">202cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">19</div></td>
+                <td bgcolor="#ECF1FF">林金榜</td>
+                <td bgcolor="#ECF1FF">Lin Chin-Pang</td>
+                <td bgcolor="#ECF1FF"><div align="center">15-06-1985</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">190cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">21</div></td>
+                <td bgcolor="#ECF1FF">黄启峰</td>
+                <td bgcolor="#ECF1FF">Hung Chi-Feng</td>
+                <td bgcolor="#ECF1FF"><div align="center">12-03-1984</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">192cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">23</div></td>
+                <td bgcolor="#ECF1FF">张羽霖</td>
+                <td bgcolor="#ECF1FF">Chang Yu-Lin</td>
+                <td bgcolor="#ECF1FF"><div align="center">16-01-1986</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">190cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">31</div></td>
+                <td bgcolor="#ECF1FF">毛加恩</td>
+                <td bgcolor="#ECF1FF">James Mao Chia-En</td>
+                <td bgcolor="#ECF1FF"><div align="center">16-11-1982</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">195cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">33</div></td>
+                <td bgcolor="#ECF1FF">吴建龙</td>
+                <td bgcolor="#ECF1FF">Wu Chien-Lung</td>
+                <td bgcolor="#ECF1FF"><div align="center">05-09-1988</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">194cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td colspan="4"><div align="right"><a href="teamrosters.htm#teamrosters"><img src="/site_files/icon_gotop.gif" width="33" height="14" /></div></td>
+          </tr>
+          <tr>
+            <td colspan="4">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="48" colspan="4" bgcolor="#FFDFAE"><a name="hkc">
+            <div align="center" class="style11">HONG KONG CHINA TEAM<br>中国香港</div></td>
+          </tr>
+          <tr>
+            <td height="38" colspan="4" class="style12">Team Officials:</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Team Manager:</td>
+            <td>Hung Yau Yit</td>
+            <td>  洪游历</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Head Coach:</td>
+            <td>Chu Yiu Ming</td>
+            <td>  朱耀明</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Assistant Coach:</td>
+            <td>Ng Kai Mo</td>
+            <td>  吴继武</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Assistant Coach:</td>
+            <td>Chu Ka Chun</td>
+            <td>  朱加俊</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Referee:</td>
+            <td>Yu Wan Ching</td>
+            <td>  袁骏业</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="38" colspan="4" class="style12">Players:</td>
+          </tr>
+          <tr>
+            <td colspan="4"><table width="100%" border="0">
+              <tr>
+                <td width="6%">&nbsp;</td>
+                <td width="11%" bgcolor="#FAFC9E"><div align="center">No.</div></td>
+                <td colspan="2" bgcolor="#FAFC9E"><div align="center">Name</div></td>
+                <td width="18%" bgcolor="#FAFC9E"><div align="center">D.O.B.</div></td>
+                <td width="14%" bgcolor="#FAFC9E"><div align="center">Height</div></td>
+                <td width="12%" bgcolor="#FAFC9E"><div align="center">Position</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">8</div></td>
+                <td width="15%" bgcolor="#ECF1FF"><div align="center">刘子健</div></td>
+                <td width="24%" bgcolor="#ECF1FF">Lau Chi Kin</td>
+                <td bgcolor="#ECF1FF"><div align="center">13-09-1979</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">181cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">5</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">罗意庭</div></td>
+                <td bgcolor="#ECF1FF">Lo Yi Ting</td>
+                <td bgcolor="#ECF1FF"><div align="center">14-11-1987</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">178cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">6</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">李剑煌</div></td>
+                <td bgcolor="#ECF1FF">Li Kim Wong</td>
+                <td bgcolor="#ECF1FF"><div align="center">31-01-1984</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">183cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">7</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">郑锦兴</div></td>
+                <td bgcolor="#ECF1FF">Cheng Kam Hing</td>
+                <td bgcolor="#ECF1FF"><div align="center">12-10-1985</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">185cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">14</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">李伟伦</div></td>
+                <td bgcolor="#ECF1FF">Li Wai Lun</td>
+                <td bgcolor="#ECF1FF"><div align="center">29-12-1976</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">201cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">15</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">吴华峰</div></td>
+                <td bgcolor="#ECF1FF">Ng Wah Fung</td>
+                <td bgcolor="#ECF1FF"><div align="center">16-06-1978</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">195cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">17</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">胡国峰</div></td>
+                <td bgcolor="#ECF1FF">Wu Kwok Fung</td>
+                <td bgcolor="#ECF1FF"><div align="center">22-10-1976</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">175cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">11</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">潘志豪</div></td>
+                <td bgcolor="#ECF1FF">Poon Chi Ho</td>
+                <td bgcolor="#ECF1FF"><div align="center">26-05-1981</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">182cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">12</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">方城义</div></td>
+                <td bgcolor="#ECF1FF">Fong Shing Yee</td>
+                <td bgcolor="#ECF1FF"><div align="center">12-12-1983</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">191cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">20</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">周健宏</div></td>
+                <td bgcolor="#ECF1FF">Chow Kin Wan</td>
+                <td bgcolor="#ECF1FF"><div align="center">19-06-1990</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">195cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">10</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">罗文光</div></td>
+                <td bgcolor="#ECF1FF">Law Man Kwong</td>
+                <td bgcolor="#ECF1FF"><div align="center">14-12-1985</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">185cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">9</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">吴家麒</div></td>
+                <td bgcolor="#ECF1FF">Tam Wai Yeung</td>
+                <td bgcolor="#ECF1FF"><div align="center">07-08-1982</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">192cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+            </table>
+          <tr>
+            <td colspan="4"><div align="right"><a href="teamrosters.htm#teamrosters"><img src="/site_files/icon_gotop.gif" width="33" height="14" /></div></td>
+          </tr>
+          <tr>
+            <td colspan="4">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="48" colspan="4" bgcolor="#FFDFAE"><a name="kor"><div align="center" class="style11">KOREA CHOSUN UNIVERSITY<br>韩国朝鲜大学</div></td>
+          </tr>
+          <tr>
+            <td height="38" colspan="4" class="style12">Team Officials:</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Team Manager:</td>
+            <td>Wee Seun Doo</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Assistant Team Manager:</td>
+            <td>Kim Mi Suk</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Head Coach:</td>
+            <td>Lee Min Hyun</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Assistant Coach:</td>
+            <td>Bae Young Ho</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="38" colspan="4" class="style12">Players:</td>
+          </tr>
+          <tr>
+            <td colspan="4"><table width="100%" border="0">
+              <tr>
+                <td width="6%">&nbsp;</td>
+                <td width="11%" bgcolor="#FAFC9E"><div align="center">No.</div></td>
+                <td colspan="2" bgcolor="#FAFC9E"><div align="center">Name</div></td>
+                <td width="18%" bgcolor="#FAFC9E"><div align="center">D.O.B.</div></td>
+                <td width="12%" bgcolor="#FAFC9E"><div align="center">Height</div></td>
+                <td width="14%" bgcolor="#FAFC9E"><div align="center">Position</div></td>
+              </tr>
+              
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">5</div></td>
+                <td width="15%" bgcolor="#ECF1FF"><div align="center">白正显</div></td>
+                <td width="24%" bgcolor="#ECF1FF">Baek Jung Hyun</td>
+                <td bgcolor="#ECF1FF"><div align="center">01-09-1989</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">180cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">6</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">禹昊均</div></td>
+                <td bgcolor="#ECF1FF">Woo Ho Gyun</td>
+                <td bgcolor="#ECF1FF"><div align="center">15-04-1988</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">180cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">9</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">高彰燮</div></td>
+                <td bgcolor="#ECF1FF">Ko Chang Sup</td>
+                <td bgcolor="#ECF1FF"><div align="center">07-08-1988</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">185cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">11</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">白承昊</div></td>
+                <td bgcolor="#ECF1FF">Baek Seung Ho</td>
+                <td bgcolor="#ECF1FF"><div align="center">20-11-1987</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">189cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G/F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">12</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">崔秀贤</div></td>
+                <td bgcolor="#ECF1FF">Choi Su Hyun</td>
+                <td bgcolor="#ECF1FF"><div align="center">28-01-1991</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">182cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">13</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">郑晋坤</div></td>
+                <td bgcolor="#ECF1FF">Joung Jin Gon</td>
+                <td bgcolor="#ECF1FF"><div align="center">25-03-1989</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">185cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">21</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">金斗元</div></td>
+                <td bgcolor="#ECF1FF">Kim Da Woon</td>
+                <td bgcolor="#ECF1FF"><div align="center">09-06-1988</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">197cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">15</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">李大渊</div></td>
+                <td bgcolor="#ECF1FF">Lee Dae Yeon</td>
+                <td bgcolor="#ECF1FF"><div align="center">27-01-1989</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">200cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">22</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">金童佑</div></td>
+                <td bgcolor="#ECF1FF">Kim Dong Woo</td>
+                <td bgcolor="#ECF1FF"><div align="center">29-05-1990</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">193cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">23</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">金元帝</div></td>
+                <td bgcolor="#ECF1FF">Kim Won Je</td>
+                <td bgcolor="#ECF1FF"><div align="center">30-05-1988</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">187cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">24</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">全在佑</div></td>
+                <td bgcolor="#ECF1FF">Jeon Jae Woo</td>
+                <td bgcolor="#ECF1FF"><div align="center">26-08-1990</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">187cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">32</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">金辉汶</div></td>
+                <td bgcolor="#ECF1FF">Kim Hwi Min</td>
+                <td bgcolor="#ECF1FF"><div align="center">24-05-1990</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">190cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F/C</div></td>
+              </tr>
+            </table>
+          <tr>
+            <td colspan="4"><div align="right"><a href="teamrosters.htm#teamrosters"><img src="/site_files/icon_gotop.gif" width="33" height="14" /></div></td>
+          </tr>
+          <tr>
+            <td colspan="4">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="48" colspan="4" bgcolor="#FFDFAE"><a name="mas">
+            <div align="center" class="style11">MALAYSIA MEN'S TEAM<br />马来西亚男子队</div></td>
+          </tr>
+          <tr>
+            <td height="38" colspan="4" class="style12">Team Officials:</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Team Leader:</td>
+            <td>Tan Kang Yong JP</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Team Manager:</td>
+            <td>Wee Cheong Phor</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Assistant Team Manager:</td>
+            <td>Lim Chui Deng</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Head Coach:</td>
+            <td>Goh Cheng Huat</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Assistant:</td>
+            <td>Soo Eng Heng</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Referee:</td>
+            <td>Wong Chung Min</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="38" colspan="4" class="style12">Players:</td>
+          </tr>
+          <tr>
+            <td colspan="4"><table width="100%" border="0">
+              <tr>
+                <td width="6%">&nbsp;</td>
+                <td width="10%" bgcolor="#FAFC9E"><div align="center">No.</div></td>
+                <td colspan="2" bgcolor="#FAFC9E"><div align="center">Name</div></td>
+                <td width="15%" bgcolor="#FAFC9E"><div align="center">D.O.B.</div></td>
+                <td width="14%" bgcolor="#FAFC9E"><div align="center">Height</div></td>
+                <td width="14%" bgcolor="#FAFC9E"><div align="center">Position</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">4</div></td>
+                <td width="12%" bgcolor="#ECF1FF"><div align="center">何耀隆</div></td>
+                <td width="29%" bgcolor="#ECF1FF">Ho Yeow Loong</td>
+                <td bgcolor="#ECF1FF"><div align="center">06-05-1988</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">178cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">5</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">颜坊峰</div></td>
+                <td bgcolor="#ECF1FF">Gan Hong Hoong</td>
+                <td bgcolor="#ECF1FF"><div align="center">04-06-1990</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">186cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">6</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">魏川进</div></td>
+                <td bgcolor="#ECF1FF">Wee Chuan Chin</td>
+                <td bgcolor="#ECF1FF"><div align="center">27-05-1984</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">180cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">7</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">蔡子贤</div></td>
+                <td bgcolor="#ECF1FF">Chai Chze Hian</td>
+                <td bgcolor="#ECF1FF"><div align="center">01-10-1982</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">180cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">8</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">黄有成</div></td>
+                <td bgcolor="#ECF1FF">Lee Chien Chung</td>
+                <td bgcolor="#ECF1FF"><div align="center">08-08-1986</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">185cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">9</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">古加尼</div></td>
+                <td bgcolor="#ECF1FF">Guganeswaran Batumalai</td>
+                <td bgcolor="#ECF1FF"><div align="center">26-05-1982</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">180cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">10</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">郭添源</div></td>
+                <td bgcolor="#ECF1FF">Kuek Tian Yuan</td>
+                <td bgcolor="#ECF1FF"><div align="center">03-08-1991</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">198cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">11</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">罗树辉</div></td>
+                <td bgcolor="#ECF1FF">Loh Shee Fai</td>
+                <td bgcolor="#ECF1FF"><div align="center">16-01-1989</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">189cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">12</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">关永境</div></td>
+                <td bgcolor="#ECF1FF">Kwaan Yoong Jing</td>
+                <td bgcolor="#ECF1FF"><div align="center">13-07-1990</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">200cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">13</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">陈利伟</div></td>
+                <td bgcolor="#ECF1FF">Chee Li Wei</td>
+                <td bgcolor="#ECF1FF"><div align="center">16-09-1983</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">197cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">14</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">许伟德</div></td>
+                <td bgcolor="#ECF1FF">Koh Way Tek</td>
+                <td bgcolor="#ECF1FF"><div align="center">06-01-1983</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">193cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">15</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">杨启益</div></td>
+                <td bgcolor="#ECF1FF">Yeow Kee Aik</td>
+                <td bgcolor="#ECF1FF"><div align="center">21-12-1988</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">195cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+            </table>
+          <tr>
+            <td colspan="4"><div align="right"><a href="teamrosters.htm#teamrosters"><img src="/site_files/icon_gotop.gif" width="33" height="14" /></div></td>
+          </tr>
+          <tr>
+            <td colspan="4">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="48" colspan="4" bgcolor="#FFDFAE"><a name="phil">
+              <div align="center" class="style11">PHILIPPINES PHAREX BIDANG GENERIX TEAM<br>菲律宾法乐仕</div></td>
+          </tr>
+          <tr>
+            <td height="38" colspan="4" class="style12">Team Officials:</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Team Manager:</td>
+            <td>Jean Michael L. Alabanza</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Coach:</td>
+            <td>Gian Carl L. Tan</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Assistant Coach:</td>
+            <td>Michael Gregg M. Buendia</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Officer:</td>
+            <td>Richard Umayam</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Officer:</td>
+            <td>Nixon Mas</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Referee:</td>
+            <td>Roel T. Roxas</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="38" colspan="4" class="style12">Players:</td>
+          </tr>
+          <tr>
+            <td colspan="4"><table width="100%" border="0">
+              <tr>
+                <td width="6%">&nbsp;</td>
+                <td width="11%" bgcolor="#FAFC9E"><div align="center">No.</div></td>
+                <td width="38%" bgcolor="#FAFC9E"><div align="center">Name</div></td>
+                <td width="16%" bgcolor="#FAFC9E"><div align="center">D.O.B.</div></td>
+                <td width="14%" bgcolor="#FAFC9E"><div align="center">Height</div></td>
+                <td width="15%" bgcolor="#FAFC9E"><div align="center">Position</div></td>
+              </tr>
+              
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">4</div></td>
+                <td bgcolor="#ECF1FF">Conrad Fritz Bauzon</td>
+                <td bgcolor="#ECF1FF"><div align="center">22-11-1983</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">185cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">5</div></td>
+                <td bgcolor="#ECF1FF">Mark Angelo Canlas</td>
+                <td bgcolor="#ECF1FF"><div align="center">15-06-1986</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">190cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">6</div></td>
+                <td bgcolor="#ECF1FF">John Carl Melegrito</td>
+                <td bgcolor="#ECF1FF"><div align="center">12-12-1984</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">173cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">7</div></td>
+                <td bgcolor="#ECF1FF">Jerick Canada</td>
+                <td bgcolor="#ECF1FF"><div align="center">27-05-1988</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">168cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">8</div></td>
+                <td bgcolor="#ECF1FF">Raymond John Aguilar</td>
+                <td bgcolor="#ECF1FF"><div align="center">27-07-1985</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">188cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">9</div></td>
+                <td bgcolor="#ECF1FF">Alfredo Gerilla Jr</td>
+                <td bgcolor="#ECF1FF"><div align="center">25-09-1984</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">193cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">10</div></td>
+                <td bgcolor="#ECF1FF">Michael Galinato</td>
+                <td bgcolor="#ECF1FF"><div align="center">04-08-1986</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">192cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">C</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">11</div></td>
+                <td bgcolor="#ECF1FF">Richard Cole</td>
+                <td bgcolor="#ECF1FF"><div align="center">09-10-1984</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">188cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">12</div></td>
+                <td bgcolor="#ECF1FF">Von Harry Lanete</td>
+                <td bgcolor="#ECF1FF"><div align="center">02-10-1985</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">173cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">G</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">13</div></td>
+                <td bgcolor="#ECF1FF">Ian Chris Mazo</td>
+                <td bgcolor="#ECF1FF"><div align="center">22-06-1984</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">188cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">14</div></td>
+                <td bgcolor="#ECF1FF">Elmer Espiritu</td>
+                <td bgcolor="#ECF1FF"><div align="center">23-11-1985</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">188cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td bgcolor="#ECF1FF"><div align="center">15</div></td>
+                <td bgcolor="#ECF1FF">James Mangahas</td>
+                <td bgcolor="#ECF1FF"><div align="center">08-10-1986</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">188cm</div></td>
+                <td bgcolor="#ECF1FF"><div align="center">F</div></td>
+              </tr>
+            </table>
+          <tr>
+            <td colspan="4"><div align="right"><a href="teamrosters.htm#teamrosters"><img src="/site_files/icon_gotop.gif" width="33" height="14" />          </div>
+        </table>        
+      </td>
+    </tr>
+  </table>
+  <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

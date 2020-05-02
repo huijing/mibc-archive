@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style7 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style8 {
+	font-size: 14px;
+	font-style: italic;
+}
+.style10 {
+	font-size: 13px;
+	font-style: italic;
+}
+.style11 {font-size: 14px}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" colspan="2" bgcolor="#BBFFC7"><span class="style7">08.10.2009 A tough win for our boys against Hong Kong China</span></td>
+          </tr>
+          <tr>
+            <td><span class="style10"><br />by Chen Hui Jing</span><br>
+            <p>The Malaysia Men's team managed a hard-won 79-74 victory over the Hong Kong China team during their second game of the MIBC. </p>
+              <p>Both teams started off strong, with Malaysian center, Chee Li Wei, scoring 11 points in the first quarter off two consecutive 3-point plays. Loh Shee Fai also lit it up from beyond the arc with two consecutive 3 pointers. Fong Shing Yee, from the Hong Kong team, had an equally hot hand, scoring 10 points in the first quarter, granting the hosts a mere two-point lead into the second quarter. </p>
+              <p>With the Hong Kong team falling into a scoring rut during the second quarter, the hosts managed to push their lead to 10 before Li Kim Wong completed a 3-point play to break the rut. Lau Chi Kin immediately followed up with two 3-pointers to even the score and 36 each. The score was 39-40 in favour of the Malaysians at half-time. </p>
+              <p>The Malaysians opened the second half with a 14-2 run, with 3-pointers from both Guganeswaran and Loh Shee Fai. Our boys managed to disrupt the Hong Kong offense by switching up defenses and led by 12 at the end of the third quarter. </p>
+              <p>Cheng Kam Hing and Lau Chi Kin led the Hong Kong China team's rally in the last quarter and pulled to within four points with 14 seconds remaining.  	Cheng Kam Hing and Lau Chi Kin With time running out, the Hong Kong team had no choice but to foul. Wee Chuan Chin hit 1 of 2 free throws to secure the win.</p>
+              <p> The Malaysia team had 4 players scoring in double figures. Chee Li Wei led all scorers with 18 points and grabbed 6 rebounds. Loh Shee Fai had 16 points off 4-for-6 shooting from beyond the arc. Chai Chze Hian scored 9 points off the bench in the last quarter and finished with 13 points. </p>
+            <p>The Hong Kong China team also had 4 players scoring in double figures. Fong Shing Yee was 8-for-13 from the field, scoring 17 points. Lau Chi Kin and Lo Yi Ting both scored 13 apiece.</p></p>
+            </td>
+            <td><div align="right">
+              <p></p>
+              <p><img src="/site_files/mas_hkc_article.JPG" alt="MAS vs HKC" width="200" height="293" /></p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div></td>
+          </tr>
+          <tr>
+            <td colspan="2"><p><strong>5分險勝香港 大馬二連勝</strong>  </p>
+              <p>（吉隆坡8日訊）禁區守護神陳利偉帶頭沖，羅樹輝、蔡子賢和魏川進則從板凳殺出支援，幫助大馬男籃在馬來西亞國際邀請賽次仗，艱險以79比74力挫強敵香港，力取2連胜。</p>
+              <p>帶著昨晚首戰大胜中國珠海免稅集團的餘威，陳利偉此役首節就已飆進11分，包括3記“3分打”帶起全隊氣勢，羅樹輝也投進兩顆三分彈。</p>
+              <p>不過，港隊大前鋒方城義不甘示弱，首節也有10分進帳助球隊以22比24咬緊大馬，李劍煌、劉子健和羅意庭在次節先后建功，半場結束追至39比40。</p>
+              <p>中場休息后，古加尼和羅樹輝各進一粒三分球，大馬第3節以一波10比0高潮強勢開局，加上不斷轉換防守模式打亂了港隊節奏，3節過后以62比50掌握12分優勢。</p>
+              <p><strong>打響首炮‧他們可靠<br />
+              大馬4小福贏掌聲</strong></p>
+              <table width="20" align="right" border="0">
+                <tbody>
+                  <tr>
+                    <td><img src="http://www.chinapress.com.my/data/2009-10-09/sports/1009ss20b.jpg" /></td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="gainsboro"><p><span class="style8">攝影：蔡復丞</span><br />
+                        <span class="style11">珠海控衛張繼興（左）運球突破，大馬小將顏坊峰不敢怠慢緊盯不放。</span></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              曾經有人認為，大馬男籃主帥吳清發在本屆國際邀請賽重用年輕小將是一次冒險，但其實推陳出新是國家隊重建的必經階段，何況几名小伙子在首戰的表現也沒有讓人失望。
+              </p>
+              <p>這次國際邀請賽，大馬陣容多了4張新面孔，分別是200公分的關永境（19歲）、198公分的郭添源（18歲）、186公分的顏坊峰（19歲）以及178公分的何耀隆（21歲），若非小將李健宗訓練時受傷退出，大馬甚至有5名新人！</p>
+              <p><strong>何耀隆最搶眼</strong></p>
+              <p>當然，球迷們不可能對4名年輕人期望過高，畢竟發哥這次帶他們出征，主要還是想讓他們吸取經驗，不是要他們當“救世主”。因此從這個角度出發，4位小將的表現可以打上及格的分數。</p>
+              <p>先看看他們在首仗（85比60擊敗中國珠海免稅集團）交出的數據，關永境先發打了14分半鐘，獲得4分4籃板1助攻；郭添源先發上陣約12分鐘，交出3分3籃板3助攻；顏坊峰替補出場7分22秒，拿下6分1籃板1助攻。</p>
+              <p>何耀隆則是4名小將當中表現最搶眼的一位，他后備入替打了15分19秒，繳出8分5籃板1助攻，其中有一次在几名高佬的包圍下搶得進攻籃板，另一次硬闖禁區強攻得手完成“3分打”，皆贏得了球迷熱烈的掌聲。</p>
+              <p><strong>渴望為國效力</strong></p>
+              <p>發哥在評價4名新人在首戰的表現時說：“不錯啊，他們都有很好的發揮。耀隆打球的視野很開闊，有領導才能，而且拚勁十足。坊峰一開始有點緊張，但適應比賽后也投進了几球。”</p>
+              <p>“永境和添源一直以來對自己缺乏信心，所以這次我讓他們首發出場拿經驗，並叮囑他們無需想太多，只要做好自己的本份就行了，而他們也達到了我的要求。”</p>
+              <p>“事實上，他們心中都有那團火要為國家隊效力，只是以前沒有人給他們机會，所以現在就是他們的机會。”</p>
+              <p>可以肯定的是，發哥已經向其他年輕球員發出了一個信息：“只要你有心又肯下苦功，國家隊的大門永遠為你們敞開！”</p>
+            <p class="style8">中国报叶正欣报道</p></td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t2" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

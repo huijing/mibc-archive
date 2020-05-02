@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style7 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style8 {font-size: 14px}
+.style9 {font-size: 12px}
+.style10 {font-size: 12px; font-style: italic; }
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" bgcolor="#BBFFC7"><span class="style7">06.10.2009 備戰兩年後東運 女籃栽培葉晶兒蘇葦穎</span></td>
+          </tr>
+          <tr>
+            <td><br>
+              <span class="style9">‧中國報 </span>
+              <p class="style8">走過不久前在亞錦賽升級失敗的失望，大馬女籃已開始放眼未來，葉晶兒（18歲）和蘇葦穎（17歲）兩名年輕球員，將在大馬國際籃球邀請賽上，成為重點考察的對象。</p>
+              <p class="style8"> 女子組是本屆賽會增設的項目，大馬將與中國廣州青年隊、中華台北海山高中及新加坡內政群英，進行單循環爭奪后冠。女子賽將于周五上演，大馬首戰對手是平均年齡只有15.3歲、但身高出眾的廣州青年隊。</p>
+              <p class="style8"> 大馬女籃主帥陳時和在受訪時說：“今年寮國東運會又不設籃球項目，使得一些球員已開始萌生退役的念頭，這無疑已敲響了我們的警鐘，所以教練團不得不開始準備兩年后的東運會。”</p>
+              <p class="style8"><strong> 球員萌退役念頭</strong></p>
+              <p class="style8"> 相比亞錦賽陣容，陳教練保留10名奪得第Ⅱ級冠軍的球員，7月份打過瓊斯杯的馬逑蓮和陳慧晶讓位，由“高妹”<span class="style8">葉</span>晶兒及控衛蘇葦穎兩名小將取代，而周蓉蓉、張溫柔和李秀芬3名東運金牌戰將繼續因傷缺陣。              </p>
+              <p class="style8">事實上，在點兵出征亞錦賽時，陳教練就很想把晶兒和葦穎帶上戰場，可惜由于A流感肆虐，教育部有令禁止學生球員出國比賽，如今大馬國際邀請賽在家主辦，兩位小將終于獲得吸取國際賽經驗的机會。              </p>
+              <p class="style8">陳教練說：“我想利用本屆賽會來考察兩位新人，看看她們在國際賽會有什么樣的表現。尤其是晶兒，她是國內最高的球員（190公分），希望這次通過與其他更高的球員較量，她能從中學到一點東西。”              </p>
+              <p class="style8">身高不足難突破</p>
+              <p class="style8"> “無可否認，我們這次在印度亞錦賽，所面對的最大的問題就是身高不足，很多時候只能靠外線得分。因此，我們現在要開始重點培養現有的高個子球員，晶兒是其中一位，另一位是185公分的卡萊瑪蒂。”            </p>
+            <p class="style8">“雖然卡萊瑪蒂進步了很多，但由于球齡太淺，她在國際賽上還是顯得非常嫩，唯有通過不斷的訓練和打比賽，希望她能夠成為一名更好的球員。” </p></td>
+          </tr>
+          <tr>
+            <td><p><br />
+              After the disappointment in Chennai, the women's team is set to show their skills in front of a home crowd. National Women's Team Head Coach, Mr. Tan See Wah, is planning on using this tournament to allow the young players on the team to gain valuable game experience. </p>
+              <p>As basketball will not be played in this year's edition of the SEA games in Laos, the team has no choice but to prepare for the next SEA games in 2011. Some of the experienced players on the team are already contemplating retirement and Coach Tan hopes that his younger chargers will be able to mature faster so as to take over their seniors positions.              </p>
+              <p>The team will retain 10 players from the FIBA Asia squad and two fresh faces, Yap Ching Yee and Saw Wei Yin will join them in a bid to win this MIBC title. Ching Yee is only 18 years old, but already towers over the rest at 192cm. Coach Tan hopes that his two young players will be able to play well this tournament and gain some international experience.              </p>
+              <p>Coach Tan had been unable to bring the two of them to India for the FIBA Asia Championships due to the Ministry of Education's ruling on students going overseas. Our girls were undoubtedly among the smallest teams at that tournament and it is Coach Tan's wish that Ching Yee will be able to learn something from this experience in preparation for the future.                </p>
+            <p class="style10">article from China Press, translated by Chen Hui Jing</p></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

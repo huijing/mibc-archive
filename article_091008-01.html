@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style7 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style8 {font-size: 14px}
+.style9 {font-size: 12px}
+.style10 {
+	font-size: 13px;
+	font-style: italic;
+}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" colspan="2" bgcolor="#BBFFC7"><span class="style7">08.10.2009 刘海龙得24分14篮板 珠海队法乐仕尝首胜
+  </span></td>
+          </tr>
+          <tr>
+            <td><br>
+              <span class="style9">‧中国报 叶正欣报道</span>
+              <p class="style8">（吉隆坡8日訊）鋒將劉海龍個人獨取24分14籃板，率領中國珠海免稅集團在第2屆馬來西亞國際籃球邀請賽次仗，知恥而后勇以73比66力擒菲律賓次級聯賽亞軍法樂仕，拿下首胜。
+　</p>
+              <p class="style8">經歷昨晚的慘敗后，珠海重整戰力並作出調整，較年輕的控衛張輝和大前鋒李晉獲得首發机會，取代張繼興和趙仁斌，球隊的攻防速度明顯有所提升，與首仗完全判若兩隊。</p>
+              <p class="style8"> 此役劉海龍一開場即進入狀態，首節就已砍進了10分，助球隊以19比11取得領先，次節剩3分57秒再次三分中鵠，一度將領先優勢擴大為雙位數（31比21），並以36比29的差距進入下半場。</p>
+              <p class="style8"> 法樂仕在第3節展開反扑，並在此節還剩8分多鐘時追至38比39僅落后1分。珠海隨后打出一波13比4的攻勢，差距重新拉大為10分，但拉內特接著連中兩記三分球，3節打完比分又變為48比54。</p>
+              <p class="style8"> 末節法樂仕仍在苦苦追趕，甚至不惜在最后5分鐘試圖采取全場緊逼收復失地，但也付出了得分主力馬索5
+                犯離場的代價，終場前3分09秒曲紹華完成一次“3分打”后，珠海以69比59奠下胜基。</p>
+              <p class="style8"> 法樂仕之前就因為“灌籃王”埃斯皮里圖征戰國內大學聯賽而缺陣，主控梅萊格里托又在首戰嘴部受傷高掛免戰牌，結果只剩9人應戰的法樂仕雖已拚盡全力，但最終仍無法改變2連敗的厄運。                </p>
+              <p class="style8">此役珠海團隊命中率有所回升達到44％，除了劉海龍之外，孫忠誠貢獻14分9籃板，曲紹華交出11分11籃板的雙十成績，張輝也有10分7籃板3助攻的表現。
+                法樂仕也有4人得分達到雙位數，鮑松和馬索各得13分，卡尼亞達和拉內特兩名小個子則同獲12分，前者還有6籃板4抄截進帳。 </p>
+            </p></td>
+            <td><div align="right">
+              <p>&nbsp;</p>
+              <p></p>
+              <p><img src="/site_files/chn_phil_article.JPG" alt="CHN vs PHIL" width="200" height="365" /></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div></td>
+          </tr>
+          <tr>
+            <td colspan="2"><p><br />In a game pitting the experience and size of the Zhuhai Enterprise team against youth and speed of the Pharex Bidang Generix team, the former emerged victorious with a score of 73 to 66. The China Zhuhai Enterprise Group team scored their first victory of the tournament. </p>
+              <p>After last night's loss to the host team, Malaysia, the Zhuhai squad started off with a different line-up from the night before. The Chinese started two younger players with point guard, Zhang Hui and power forward, Li Jin, replacing Zhang Ji Xing and Zhao Renbin. This allowed them to play at a much faster pace than the previous game. </p>
+              <p>Liu Hailong started the game red-hot, scoring 10 points in the first quarter, allowing the Chinese an 8 point cushion into the second quarter. The Chinese finished the half with a 7-point lead and the score at 36 to 29.                </p>
+              <p>The Pharex Bidang Generix team mounted a ferocious comeback in the second half, cutting the Chinese lead to 1 just two minutes into the third quarter. However, the more experienced Zhuhai squad went on a 13-4 run and pulled away yet again. Von Harry Lanete hit two 3-pointers at the end of the third quarter to bring the Philippines to within 6 points. </p>
+              <p>The Pharex Bidang Generix squad refused to go down without a fight, and started pressing the Chinese with 5 minutes remaining in the game. This aggressive defense cost the Filipinos their main scoring threat, Ian Chris Mazo, who fouled out of the game.</p>
+              <p> The Filipino squad were undermanned tonight, with their starting point guard John Carl Melegrito out with an injury. With only 9 players left to play, they were unable to come back and ended the night with another loss.                </p>
+              <p>The Zhuhai squad shot the ball much better than in the previous game, hitting 44% p of their shots from the field. Sun Zhongcheng also chipped in 14 points and 9 rebounds and Qu Shaohua finished with a double-double of 11 points and 11 rebounds. </p>
+              <p>The Filipinos had four players scoring in double figures with  	Conard Fritz Bauzon and Ian Chris Mazo scoring 13 points a piece. Conard Fritz Bauzon had an all-round performance with 12 points, 6 rebounds and 4 steals and Von Harry Lanete added 12 points.</p>
+              </p>
+            <span class="style10"> by Chen Hui Jing</span></td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t2" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

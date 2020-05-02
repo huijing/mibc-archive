@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style7 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style10 {
+	font-size: 13px;
+	font-style: italic;
+}
+.style11 {
+	font-size: 14px;
+	font-style: italic;
+}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" colspan="2" bgcolor="#BBFFC7"><span class="style7">10.10.2009 Philippines Pharex Bidang Generix shoot the lights out</span></td>
+          </tr>
+          <tr>
+            <td width="97%" rowspan="2"><span class="style10">              by Chen Hui Jing</span><br>
+              <p>The Philippines Pharex Bidang Generix team came out with a lot of energy today. It was apparent that the Filipino boys were feeling good about themselves this afternoon. Shooting a fantastic 54% from 3-point range, the Pharex Bidang Generix team pulled off their first win against the Hong Kong China team 97-92. </p>
+              <p>The Philippines got off to a great start, going on a 10-2 run after the opening tip. However, the Hong Kong team warmed up soon after and went on their own 8-0 run to even the score. The Filipino side continued to shoot the ball well, with most of their shots finding the bottom of the net, the score was 28-18 at the end of the first quarter. The Pharex Bidang Generix team continued their hot shooting streak into the second quarter and had an 11 point cushion going into halftime.</p>
+              <p>Hong Kong team found their shooting touch in the second half and consecutive turnovers by the Philippines allowed the Hong Kong team to cut the lead to 4 two minutes into the third quarter. Lau Chi Kin hit all four of his 3-pointers in this quarter and cut the Filipino lead to 3 by the end of the third quarter.</p>
+              <p>With practically every Filipino player hitting their shots, there was not much the Hong Kong team could do and the Pharex Bidang Generix team had a 12 point lead with 1 minute remaining in the fourth quarter. However, the Hong Kong China team were not about to roll over and give up the win so easily. With time running out, the Hong Kong China team elected to press and foul the Filipinos to stop the clock. </p>
+              <p>The Hong Kong China team started to hit from beyond the arc. Wu Kwok Fung and Li Wai Lun combined to make five 3-pointers in the last minute. The Filipinos kept their cool though, making most of their free throw attempts to stave off the Hong Kong charge for the win.</p>
+              <p>The Philippines were 13-for-24 from three-point range and five players scoring in double-figures. Alfredo Gerilla Jr scored 20 points off 8-for-12 shooting from the field and also grabbed 10 rebounds. Conrad Fritz Bauzon, Von Harry Lanete and Ian Chris Mazo all had 15 points each, most of them coming from beyond the arc. Jerrick Canada also had 14 points.</p>
+              <p>The Hong Kong China team also had five players with double-digit scoring. Li Wai Lun, led all scorers with 23 points off 6-for-9 shooting from beyond the arc, while Lau Chi Kin scored 16 points off 4-for-9 shooting from three-point range as well. Poon Chi Ho, Kwok Fung Wu and Fong Shing Yee scored 14, 10 and 12 points respectively.</p>
+            </p></td>
+            <td width="3%"><div align="right">
+             <p>&nbsp;</p>
+             <p><img src="/site_files/hkc_phil_article.JPG" alt="HKC vs PHIL" width="200" height="323" align="absbottom" /></p>
+             <p>&nbsp;</p>
+             </div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><p>              菲律賓次級聯賽球隊法樂仕則以97比92險勝香港，結束3連敗。</p>
+              <p>菲隊5人得分上雙，三分球24投13中。在籃板球方面，兩隊同得34個。菲隊的失誤比香港少兩次（11比13）。香港在最后1分33秒的三分轟炸險些讓菲律賓法樂仕的15分優勢化為烏有，三分球命中率高達42%（48投20中），只可惜僅獲得10次罰球機會，并罰入6球，讓在罰球線29投取走22分的菲隊奪走最后的勝利。不過港隊在保守籃板球方面做得不錯，竟以對手打成34平。</p>
+              <p>李偉倫拿下全場最高的23分，中鋒李偉倫三分球9投6中得23分、5籃板和4助攻。劉子健16分，CBA后衛潘志豪貢獻14分、8籃板、4助攻和4偷球。菲律賓有5人得分上雙，但以格里拉的火力最強，拿下20分、10籃板。</p>
+              <p><span class="style11">中国报 萧证强报道</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t2" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

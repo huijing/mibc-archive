@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style7 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style8 {font-size: 14px}
+.style9 {font-size: 12px}
+.style10 {
+	font-size: 13px;
+	font-style: italic;
+}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" colspan="2" bgcolor="#BBFFC7"><span class="style7">07.10.2009 馬挫中開門紅</span></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <span class="style9"><br />‧中国报 叶正欣报道 </span>
+              <p class="style8">（吉隆坡7日訊）第2屆馬來西亞國際籃球邀請賽今日敲響戰鼓，衛冕冠軍大馬男籃差點浪費20分的領先優勢，小將羅樹輝在關鍵時刻挺身而出連中兩記三分球，大馬終場有惊無險以85比60大胜中國珠海免稅集團，順利踏出衛冕第一步。</p>
+              <p class="style8">大馬采取以高制高，除了楊啟益之外，關永境、郭添源、陳利偉和許偉德4名身高190公分以上的球員均首發出場，古加尼負責組織進攻。
+                
+                珠海雖占據身高和體格的優勢，但速度較慢，大馬一開場即以快打慢，許偉德兩顆三分彈帶出12比0的開局，次節開始再由黃有成三分命中，大馬一度以27比7遙遙領先。              </p>
+              <p class="style8">但珠海隨即調入速度較快的控衛張輝，局勢明顯有所改善，在他單節獨取12分的帶動下，珠海在半場結束時縮小差距至28比39，第3節中段更追至46比47僅落后1分。
+                
+                所幸羅樹輝及時跳出連轟兩記三分炮穩住陣腳，3節過后掌握57比48的9分優勢，第4節接上一波22比2的攻勢將差距拉大至29分，鎖定胜局。              </p>
+              <p class="style8">              大馬此役有5人得分達雙，隊長許偉德以16分居首，楊啟益和羅樹輝各得12分，黃有成貢獻11分，陳利偉也有10分進帳。大馬在三分線有不俗的表現，全場29投11次命中                。</p>            </td>
+          </tr>
+          <tr>
+            <td><br />
+              The Malaysian National Men's team got off to a brilliant start in their bid to retain their championship crown in the Malaysia International Basketball Championships (MIBC). Our boys defeated the China Zhuhai Duty Free Enterprise Group team by a 25 point margin with a final score of 85 to 60.
+</p>
+              <p>Facing the taller Chinese team, Coach Goh started four of his tallest charges, Koh Way Tek, Kuek Tian Yuan, Chee Li Wei and Kwaan Yoong Jing, and Guganeswaran Batumalai at the point guard position. Skipper, Koh Way Tek, greeted the guests from China with two 3-pointers to open the game, sparking off a 12-0 run. The Zhuhai team only managed to score after 4 minutes of play. With the hosts utilising what can be considered a 12-man rotation, the relatively older Zhuhai team were unable to keep up and our boys pushed the lead to 17 points at the end of the first quarter.</p>
+              <p> John Ng continued the Malaysian shooting streak, opening the second quarter with a 3-pointer. However, the experienced Zhuhai squad were not about to go down tamely. Zhang Hui scored 12 points in the second quarter to cut the lead to 8. A 3-pointer by Ho Yeow Loong allowed Malaysia to close out the first half with a score of 39 to 28. 
+                The Malaysians slowed the pace down during the third quarter and allowed the Zhuhai squad to come back into the game. With experience on their side, the Chinese managed to cut the lead to 1 at the five minute mark.                </p>
+              <p>However, sharpshooter Loh Shee Fai calmly swished two 3-pointers and the hosts pulled away yet again.
+                With two quick guards at the helm, the Malaysian squad pushed the pace in the last quarter and both Loh Shee Fai and Ho Yeow Loong managed to score off inside penetration. Alex Yeow and Koh Way Tek also hit from the outside. The Zhuhai team fell into a scoring rut and the Malaysians ran away with the game. </p>
+              <p>Coach Goh emptied his bench during the last four minutes and ended the game with a score of 85 to 60.
+                Five players scored in double-digits for the Malaysian team, with Koh Way Tek leading the way with 16 points. Alex Yeow and Loh Shee Fai both contributed 12 points each. The Zhuhai squad had a bad shooting night with only Zhang Hui scoring in double-digits.                </p>
+              <p class="style10">by Chen Hui Jing</p></td>
+            <td><p><img src="/site_files/mas_chn_article.JPG" width="200" height="252" align="top" /></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p></td>
+          </tr>
+          
+          <tr>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

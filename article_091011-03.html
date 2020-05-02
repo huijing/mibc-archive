@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style7 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style10 {
+	font-size: 13px;
+	font-style: italic;
+}
+.style11 {
+	font-size: 14px;
+	font-style: italic;
+}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" colspan="2" bgcolor="#BBFFC7"><span class="style7">11.10.2009 Pure Youth Construction win five straight games for the title</span></td>
+          </tr>
+          <tr>
+            <td width="97%" rowspan="2"><p><span class="style10"><br />
+              by Chen Hui Jing</span></p>
+              <p>Pure Youth Construction win five straight games to be crowned the winners of the 2nd Malaysia International Basketball Championship after defeating the Hong Kong China team 98-83.<br>
+                </p>
+              <p>
+Tsai Wen-Cheng drained a 3-pointer to open the game and this would be indicative of the good shooting form of the Pure Youth team for the rest of the game. Tso Tsung-Kai hit 4-of-5 from downtown and Pure Youth were 6-of-7 from three-point range in the first quarter. The Taiwanese led by 11 after the first quarter.</p>
+              <p>Pure Youth started second quarter on an 8-0 run. Hong Kong China were unable to hit a field-goal until the 4:22 mark, when Li Kim Wong finally drained one from beyond the arc. However, the basket seemed to have shrunk for the Hong Kong team, as they shot only 34% from the field. In contrast, the Pure Youth team, though cooling down a bit in the second quarter, were still shooting much better than their opponents and managed to extend their lead to 20 by halftime.</p>
+              <p> The boys from Hong Kong China seemed to find their shooting touch in the second half and started to hit from the outside. However, the Taiwanese were still shooting well from beyond the arc and the lead remained at 18 at the end of the third quarter. The Hong Kong team regained their shooting form and started to hit their perimeter shots. But the Pure Youth team are not the favourites for nothing, they kept their poise and had an answer for nearly every shot the Hong Kong team made.            </p>
+            <p>The Hong Kong team were unable to draw any closer than 15 points and the Pure Youth team won the game 98-83, clinching the title as well.</p>
+            <p>Pure Youth had five players scoring in double figures. Chang Yu-Lin made 4-of-6 from three point range for 24 points. Tso Tsung-Kai also contributed 22 points, making 5-of-6 of his three-point attempts. Both Hung Chi-Feng and Tsai Wen-Cheng scored 11 points and Chen Chia-Chieh also had 10 points.</p>
+            <p>Three Hong Kong China players had double-digit scoring, Li Wah Fung, with 18 points, Lo Yi Ting, with 16 points and Poon Chi Ho with 15 points.</p>            </td>
+            <td width="3%"><div align="right">
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p><img src="/site_files/tpe_hkc_article.JPG" alt="TPE vs HKC" width="200" height="339" /></p>
+            </div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><br>（吉隆坡11日訊）外號“齊天大聖”的張羽霖飆進24分，率領已提前奪冠的中華台北璞園建築以98比83輕松收拾香港，5戰全胜成為第2屆大馬國際籃球邀請賽的不敗王者，港隊2胜3負獲得第3名。</p>
+              <p> 璞園首節便已火力全開，單節命中率高達71％，三分命中率也有恐怖的67％，其中左從凱5投4中砍進12分，完全燃燒了璞園的進攻烈火，首節以33比22取得領先，半場擴大比分至54比34。 </p>
+              <p>　第3節一開始，左從凱和張羽霖又各轟進一顆三分彈，璞園取得60比36的最大領先優勢。盡管港隊極力反扑，並在第4節一度將差距縮小至13分，無奈之前失血過多，最終還是返魂乏術。 </p>
+              <p>　璞園此役有5人得分上雙，除了張羽霖之外，左從凱三分球6投5中攻下22分，蔡文誠和黃啟峰各得11分，陳世杰拿下10分；港隊方面，老將李偉倫射下18分，羅意庭16分，潘志豪15分。              </p>
+            <p class="style11">中国报叶正欣报道</p></td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t2" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

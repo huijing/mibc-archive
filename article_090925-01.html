@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style6 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style7 {font-size: 14px}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" bgcolor="#BBFFC7"><span class="style6">25.09.2009 征東南亞聯台邀請賽 大馬兵分二路</span></td>
+          </tr>
+          <tr>
+            <td><br>
+              <span class="style7">（吉隆坡25日訊）大馬國家籃球男隊教練吳清發說，縱然去年拿下冠軍，不過今年男隊將不設任何目標，主要原因是因為今年陣中沒有外籍球員。
+              
+              </p>
+              </span>
+              <p class="style7">吳教練出席大馬國際籃球邀請賽推介儀式后受訪時說：“我們會盡力，面對眾強隊環伺，不期望會重演上屆成績。不過這也是一件好事，我們能藉此機會考驗我們的本土球員。”              </p>
+              <p class="style7">“此外，去年的主力如譚健鴻及黃萬新今年都缺陣，所幸古加尼和蔡子賢能歸隊幫忙。這也不是最終名單，或許比賽前會稍調整名單。”              </p>
+              <p class="style7">男隊除了備戰這項賽會，他們也將出征10月14日開打的東南亞籃球聯賽，以及同一個時間開打的台灣花蓮觀護杯籃球邀請賽。              </p>
+              <p class="style7">“由于比賽撞期，所以我們分兩隊出擊，部分較年長且專業球員將出征東南亞聯賽，而另外的球員將隨副教練蘇永慶前往台灣花蓮。”              </p>
+              <p class="style7">詢及東南亞籃聯賽的名單時，吳教練說如今已確定將聘用2名非東南亞裔外援，剩下的可能就以全大馬球員的班底出征，也可能考慮應用3名東南亞外援的名額，聘用1至2名東南亞外援來幫忙。              </p>
+              <p class="style7">大馬隊名單</p>
+        <p class="style7">團長：陳江榮</p>
+        <p class="style7">領隊：黃鐘波；副領隊：林水龍</p>
+        <p class="style7">教練：吳清發；副教練：蘇永慶</p>
+        <p class="style7">裁判：黃崇明</p>
+        <p class="style7">大馬隊名單</p>
+        <table width="49%" border="0">
+          <tr>
+            <td width="14%" class="style7"><div align="center" class="style7">號碼</div></td>
+            <td width="30%" class="style7"><div align="center" class="style7">名字</div></td>
+            <td width="32%" class="style7"><div align="center" class="style7">身高</div></td>
+            <td width="24%" class="style7"><div align="center" class="style7">年齡</div></td>
+          </tr>
+          <tr>
+            <td class="style7"><div align="center" class="style7">4</div></td>
+            <td class="style7"><div align="center" class="style7">何耀隆</div></td>
+            <td class="style7"> <div align="center" class="style7">178公分</div></td>
+            <td class="style7"><div align="center" class="style7">21</div></td>
+          </tr>
+          <tr>
+            <td class="style7"><div align="center" class="style7">5</div></td>
+            <td class="style7"><div align="center" class="style7">顏坊峰</div></td>
+            <td class="style7"><div align="center" class="style7">186公分</div></td>
+            <td class="style7"><div align="center" class="style7">19</div></td>
+          </tr>
+          <tr>
+            <td class="style7"><div align="center" class="style7">6</div></td>
+            <td class="style7"> <div align="center" class="style7">魏川進</div></td>
+            <td class="style7"><div align="center" class="style7">180公分</div></td>
+            <td class="style7"><div align="center" class="style7">25</div></td>
+          </tr>
+          <tr>
+            <td class="style7"><div align="center" class="style7">7</div></td>
+            <td class="style7"><div align="center" class="style7">蔡子賢</div></td>
+            <td class="style7"><div align="center" class="style7">180公分 </div></td>
+            <td class="style7"><div align="center" class="style7">27</div></td>
+          </tr>
+          <tr>
+            <td class="style7"><div align="center" class="style7">8</div></td>
+            <td class="style7"><div align="center" class="style7">李健宗</div></td>
+            <td class="style7"> <div align="center" class="style7">185公分</div></td>
+            <td class="style7"><div align="center" class="style7">23</div></td>
+          </tr>
+          <tr>
+            <td class="style7"><div align="center" class="style7">9</div></td>
+            <td class="style7"> <div align="center" class="style7">古加尼</div></td>
+            <td class="style7"><div align="center" class="style7">180公分</div></td>
+            <td class="style7"><div align="center" class="style7">27</div></td>
+          </tr>
+          <tr>
+            <td class="style7"><div align="center" class="style7">10</div></td>
+            <td class="style7"> <div align="center" class="style7">郭添源</div></td>
+            <td class="style7"> <div align="center" class="style7">198公分</div></td>
+            <td class="style7"><div align="center" class="style7">18</div></td>
+          </tr>
+          <tr>
+            <td class="style7"><div align="center" class="style7">11</div></td>
+            <td class="style7"><div align="center" class="style7">羅樹輝</div></td>
+            <td class="style7"> <div align="center" class="style7">189公分</div></td>
+            <td class="style7"><div align="center" class="style7">20</div></td>
+          </tr>
+          <tr>
+            <td class="style7"><div align="center" class="style7">12</div></td>
+            <td class="style7"><div align="center" class="style7">關詠進</div></td>
+            <td class="style7"><div align="center" class="style7">200公分</div></td>
+            <td class="style7"><div align="center" class="style7">19</div></td>
+          </tr>
+          <tr>
+            <td class="style7"><div align="center" class="style7">13</div></td>
+            <td class="style7"><div align="center" class="style7">陳利偉</div></td>
+            <td class="style7"> <div align="center" class="style7">197公分 </div></td>
+            <td class="style7"><div align="center" class="style7">26</div></td>
+          </tr>
+          <tr>
+            <td class="style7"><div align="center" class="style7">14</div></td>
+            <td class="style7"><div align="center" class="style7">許偉德</div></td>
+            <td class="style7"><div align="center" class="style7">193公分</div></td>
+            <td class="style7"><div align="center" class="style7">26</div></td>
+          </tr>
+          <tr>
+            <td class="style7"><div align="center" class="style7">15</div></td>
+            <td class="style7"><div align="center" class="style7">楊啟益</div></td>
+            <td class="style7"><div align="center" class="style7">195公分</div></td>
+            <td class="style7"><div align="center" class="style7">21</div></td>
+          </tr>
+        </table>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

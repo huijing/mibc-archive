@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style7 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style8 {font-size: 14px}
+.style9 {font-size: 12px}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" bgcolor="#BBFFC7"><span class="style7">06.10.2009 召4小將助陣保冠軍 馬男本土奇兵迎外敵</span></td>
+          </tr>
+          <tr>
+            <td><br>
+              <span class="style9">‧星洲日报 </span>
+              <p class="style8">（吉隆坡）不用外援、征召4名小將，大馬男籃隊在週三（10月7日）開打的第2屆大馬國際籃球邀請賽中，將以全新的陣容對抗眾強敵力保
+
+冠軍﹗200公分的年輕中鋒關詠境、198公分的郭添源、186公分的後衛顏坊峰這3名國家後備隊球員是首次被大馬教練吳清發擢升
+
+進入征戰大馬國際邀請陣容名單。吳教練所看中的另一“新人”更令人感意外，他就是2個月前在全國元首杯賽表現出色而入選初選國手
+
+的雪蘭莪後衛何耀隆。</p>
+              <p class="style8"> 除了以上4人，大馬男籃另8人清一色是本土球員，且是大馬籃壇的精英，他們分別是魏川進、蔡子賢、黃有成、古加尼、羅樹輝、陳利偉、
+                
+              許偉德及楊啟益，其中黃有成是頂替檳城射手李健宗的空缺（李健宗在訓練時掛傷，無奈退賽）。</p>
+              <p class="style8"> 針對這樣的一個全新陣容，吳清發說：“我聽到一些人說，這樣的一個陣容形同賭上我在國家隊的主教練前途……老實說，我不曾有過這樣
+                
+                的想法，我只想盡我所能的來調動國家隊與後備隊球員的積極性，提昇他們的競爭意識，希望看到每一個球員能夠在訓練時或比賽中，能
+                
+              夠全神貫注做好本身的工作，盡最大的能力與對手週旋到底。”</p>
+              <p class="style8"> 一次過重用4名新人的確讓人有所質疑，不過往另一個角度來看，吳教練這一做法在國家男籃隊的組建過程注入了養分，讓球隊不會在日
+                
+              後出現青黃不接的局面，也為隊內打開更大的競爭張力。</p>
+              <p class="style8"> 男隊首仗迎戰珠海免稅集團
+                
+                大馬男隊在國際邀請賽第1個對手是珠海免稅集團、接下來還會硬碰香港、台灣璞園建築、韓國朝鮮大學隊及菲律賓PBL隊，期望在這項
+                
+            單循環方式進行的比賽中脫穎而出。</p></td>
+          </tr>
+          <tr>
+            <td><p><br />
+              With no foreign imports and four fresh faces on the team, the Malaysian Men's 
+
+Team will be opening the MIBC with a whole new line-up in a bid to retain 
+
+their crown. Coach Goh has included three young members of the national back-
+
+up squad in this team. Two centers, Kwaan Yoong Jing and Kuek Tian Yuan, 
+
+standing at 2m and 1.98m respectively and guard, Gan Hong Hoong, standing at 
+
+1.86m. Another surprise inclusion in the team is Ho Yeow Loong, who had been 
+
+selected for national team training after his outstanding performance at the 
+
+Agong Cup two months ago.</p>
+              <p> The rest of the team are familiar faces in the Malaysian basketball scene. 
+                
+                These players are the cream of the crop and have much international 
+                
+                experience, namely, Wee Chuan Chin, Chai Chze Hian, John Ng, Guganeswaran 
+                
+                Batumalai, Loh Shee Fai, Chee Li Wei, Koh Way Tek and Yeow Kee Aik. John Ng is 
+                
+                taking over the place of the Lee Chien Chung, the sharpshooter from Penang, 
+                
+                who unfortunately has been injured.
+                Coach Goh has faced some criticism over his selection of players for this 
+                
+                tournament. Some even go on to say that Coach Goh is risking his position as 
+                
+                national team coach with such a line-up. Coach Goh has brushed aside such 
+                
+                comments saying that his only wish is to increase the level of competitiveness 
+                
+                among the players within the national men's team, and that each and every 
+                
+              player will put in his full effort and focus during training and games.</p>
+              <p> It may be a daring move to include four youngsters the squad for such a high-
+                
+                level international tournament but Coach Goh is looking forward to the future 
+                
+                to ensure that the Malaysian Men's team will be able to maintain its quality 
+                
+              of play after his current crop of experienced players retire.</p>
+              <p> The Malaysian team will be up against the China Zhuhai Duty Free Enterprise 
+                
+                Group team for their opening match, followed by the Hong Kong China team, the 
+                
+                Chinese Taipei Pure Youth Construction team, the Chosun University team from 
+                
+                Korea and finally, the Philippines Pharex Bidang Generix team. The tournament 
+                
+                will be played in a single round-robin format and hopefully our boys will be 
+                
+                able to stave off their tough opponents to emerge victorious once again.              </p>
+            </p>            <span class="style9"><em>article from Sin Chew Daily, </em></span><span class="style9"><em>translated by Chen Hui Jing</em></span></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

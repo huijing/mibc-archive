@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC Home Page</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style6 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.style8 {
+	font-size: 18px
+}
+.style10 {font-size: 14px; font-weight: bold; }
+.style11 {font-size: 14px}
+.style12 {color: #FFFFFF}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="home" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top">
+      	  <SCRIPT LANGUAGE="Javascript" class="timetext">
+
+var now = new Date();
+
+var days = new Array('Sunday','Monday','Tuesday','Wednesday',
+
+'Thursday','Friday','Saturday');
+
+var months = new Array('January','February','March','April',
+
+'May','June','July','August','September',
+
+'October','November','December');
+
+var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+
+function y2k(number){return (number < 1000) ? number + 1900 : number;}
+
+today = days[now.getDay()] + " " +
+
+date + " " +
+
+months[now.getMonth()] + ", " +
+
+(y2k(now.getYear())) ;
+
+document.write("<font size=-1>");
+document.write("" +today+ "");
+
+</SCRIPT>
+      <p>
+      <a name="newsupdates"><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+         <tr>
+        <td height="35" bgcolor="#BBFFC7"><span class="style11"><strong>04.10.2009 官方网站花絮篇</strong></span></td>
+          </tr>
+          <tr>
+            <td><br>
+                <span class="style11">迎接马来西亚国际篮球邀请赛第二赛季的到来，马来西亚篮球总会官方网站以崭新的面貌问世之际，也赢得球职员的支持与响应，推出一项“随想随谈”小块点评，提供更多看点...</span></p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="article_091004-01.html" class="type10bbr">More &gt;&gt;</a></div></td>
+        </tr>
+          <td height="35" bgcolor="#BBFFC7"><h2 class="style8 style11">25.09.2009 征東南亞聯台邀請賽 大馬兵分二路</h2></td>
+          </tr>
+          <tr>
+            <td><span class="style11"><br>
+              大馬國家籃球男隊教練吳清發說，縱然去年拿下冠軍，不過今年男隊將不設任何目標，主要原因是因為今年陣中沒有外籍球員.
+              </span>
+              <p class="style11">吳教練出席大馬國際籃球邀請賽推介儀式后受訪時說：“我們會盡力，面對眾強隊環伺，不期望會重演上屆成績。不過這也是一件好事，我們能藉此機會考驗我們的本土球員.”</p>
+              <p class="style11">“此外，去年的主力如譚健鴻及黃萬新今年都缺陣，所幸古加尼和蔡子賢能歸隊幫忙。也不是最終名單，或許比賽前會稍調整名單.”...</p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="article_090925-01.html" class="type10bbr">More &gt;&gt;</a></div></td>
+          </tr>
+          <tr>
+            <td height="35" bgcolor="#BBFFC7"><span class="style10">25.09.2009 下月國際籃球賽 - 票價公佈‧設技術賽</span></td>
+          </tr>
+          <tr>
+            <td><br> 
+                <span class="style11">馬籃總慶祝成立50週年金禧紀念而主辦的國際籃球邀請賽，確定下月舉行，6男4女隊伍將一較高下。                </span></p>
+              <p><span class="style11">大馬籃總署理會長丹斯里拿督鄭福成今天在大運酒店，為這項賽事舉行推介儀式，陪同出席者還有大馬籃總秘書陳時和、署理秘書沈新興、主要贊助商大馬電訊公司、聯合贊助商NEW BALANCE運動用品公司、馬石油、官方用球MOLTEN公司、官方電台MY FM、官方飲品美祿公司及SPRITZER公司的各代表...</span><br>              
+                          </p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="article_090925-02.html" class="type10bbr">More &gt;&gt;</a></div></td>
+          </tr>
+          
+          <tr>
+            <td height="35" bgcolor="#BBFFC7"><span class="style10">25.09.2009 大馬國際籃球邀請賽：古加尼蔡子賢歸隊‧本地薑對抗列強</span></td>
+          </tr>
+          <tr>
+            <td><br>大馬男籃國家隊將以純本土球員角逐10月7至11日在大馬籃總體育館舉行的第二屆大馬國際籃球邀請賽，不奢求衛冕，只求藉此賽會讓隊員在與列強交手時得到磨練，同時為緊接著掀戰的首屆東南亞職業籃球聯賽（ABL）作好準備。
+              
+            </p>
+            <p class="style11">大馬男籃去年在兩位外援助陣下，在單循環賽事中以4勝1負的戰績勇奪桂冠，但大馬籃總這次決定不聘請外援，希望以本土球員去對抗東亞列強及菲律賓的聯賽隊伍...</p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="article_090925-03.html" class="type10bbr">More &gt;&gt;</a></div></td>
+          <tr>
+            <td height="35" bgcolor="#BBFFC7"><span class="style6 style11">25.09.2009 大马国际男篮邀请赛 国油队本土军保冠</span></td>
+          </tr>
+          <tr>
+            <td><br>
+                <span class="style11">仅保留上届4名旧将的卫冕冠军马来西亚国油队，虽然不期望在第二届马来西亚国际男篮邀请赛顺利蝉联，但会全力以赴争取佳绩。</span></p>
+            <p><span class="style11">国油在去年的首届赛会仅输给（印度），随后接连斩落中华台北璞园（上届亚军）、新加坡腾飞之狮（上届季军）、香港和韩国庆熙大学，最终在这场单循环赛中爆冷登顶...</span></p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="article_090925-04.html" class="type10bbr">More &gt;&gt;</a></div></td>
+          </tr>
+          <tr>
+            <td width="100%" height="35" bgcolor="#BBFFC7"><span class="style11"><strong>14.09.2009 10队伍参与赛会</strong></span></td>
+          </tr>
+          <tr>
+            <td><span class="style11"><br>
+            第二届马来西亚国际篮球邀请赛MIBC反应热烈，总共有10支男女队伍参与其盛。</span>MIBC筹委会主席丹斯里郑福成今天在新闻发布会上说，除了保持6支男队，还增设了4队与会的女子赛...</td>
+          </tr>
+          
+          <tr>
+            <td><div align="right"><a href="article_090925-05.html" class="type10bbr">More &gt;&gt;</a></div></td>
+          </tr>
+          <tr>
+            <td height="35" bgcolor="#BBFFC7"><span class="style11"><strong>14.09.2009 吴清发执掌帅印</strong></span></td>
+          </tr>
+          <tr>
+            <td><br>
+                <span class="style11">国家男篮队今天开始报到参训，同时也是吉隆龙队的选拔场合。大马国家队及吉隆坡龙队主帅，都由“智多星”吴清发出任。所有球团名单，必须在本届的第一仗开赛前两周呈上。            </span></p>
+            <p><span class="style11">傅古汉指出，据他所知，每队聘用外援的人数各异。本土球员实力较弱的汶莱和新加坡，都请足满额的“2+3”外援，印尼和泰国均料为“2+1”；技艺在东南亚居首的菲律宾，则应是只用2名外援...</span></p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="article_090914-01.html" class="type10bbr">More &gt;&gt;</a></div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><div align="center">
+              <table width="30%" border="0">
+                <tr>
+                  <td><div align="center" class="style12"><a href="index.html" class="type10bbr">1</a></div></td>
+                  <td><div align="center" class="style12"><a href="home2.html" class="type10bbr">2</a></div></td>
+                  <td><div align="center" class="style12"><a href="home3.html" class="type10bbr">3</a></div></td>
+                  <td><div align="center" class="style12"><a href="home4.html" class="type10bbr">4</a></div></td>
+                  <td><div align="center"><a href="home5.html" class="type10bbr">5</a></div></td>
+                  <td><div align="center" ><a href="home6.html" class="type10bbr">6</a></div></td>
+                </tr>
+              </table>
+            </div></td>
+          </tr>
+        </table>        
+      </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+    <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+    </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

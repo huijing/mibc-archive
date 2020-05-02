@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC - Men's Team Analysis</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style11 {font-size: 18px; font-weight: bold; color: #330000; }
+.style12 {
+	color: #FF3300;
+	font-weight: bold;
+}
+.style14 {
+	font-family: "Anja Eliane";
+	font-size: 24px;
+}
+.style16 {
+	color: #000000;
+	font-size: 14px;
+}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="mensteams" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" alt="Site Navigation" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" alt="随想随谈" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" alt="Schedule" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p>
+      <a name="teamanalysis"><img src="/site_files/teamanalysis.png" alt="Team Analysis" width="215" height="71" /></p>
+        <p align="center" class="style14">MEN'S TEAMS</p>
+        <table width="100%" border="0">
+          <tr>
+            
+            <td width="100%" height="48" bgcolor="#FFDFAE"><a name="chn">
+            <div align="center" class="style11">CHINA ZHUHAI DUTY FREE ENTERPRISE GROUP<br>
+            中国珠海免税集团篮球队</div></td>
+          </tr>
+          <tr>
+            <td height="38" class="style16"><p>集合前国手和国青队猛将的珠海市免税企业集团篮球队，准备在2009年国际篮球邀请赛给对手好看。
+             </p>
+              <p> 曾夺得2006及2007年两夺中国业余篮球公开赛总冠军的珠海免税集团是中国业余篮球的楚翘，队中拥有多位原国家队、国家青年队和省青年队球员，整体实力强盛，看好在本届赛会有一番作为。              </p>
+              <p>主力中锋赵仁斌是原国家队球员，曾效力过沈阳队、北京奥神、新浪狮、新疆广汇等CBA职业球队，能打中锋也能打大前锋，善于内外结合，中远距离投篮较准。                </p>
+              <p>前锋曲绍华曾入选中国国家青年队，是队中的“拼命三郎”，能突能分能投，作风强悍硬朗。后卫有曾多次入选国青队的张继兴，他拥有超强的控球及组织能力，善于把握场上节奏。 </p>
+              <p>另两名悍将也来头不小，前锋刘海龙速度快，投篮较准，曾效力CBA山西中宇队。中锋孙忠诚曾效力过CBA浙江万马、佛山凤铝等篮球队。            </p>
+            <p>他们在2007年首夺中国业余篮球公开赛总冠军后，曾访吉隆坡与大马国家队交流切磋，结果以2分微负。在今年5月，泛马篮球联赛（NBL）组成跨年代明星队回访珠海，居主的珠海免税集团借助主场之利，71比61打败明星队，因此这次来马的目标明显，剑指冠军杯。</p></td>
+          </tr>
+          <tr>
+            <td height="38" bgcolor="#ECF5FF"><br /><p>The China Zhuhai Duty Free Enterprise Group is certainly a force to reckoned with.
+              </p>
+              <p>With an impressive roster coupled with outstanding achievements back home, it is only natural for the China team to be named as one of the favorites to win the Malaysian International Basketball Championship (MIBC) title.              </p>
+              <p>The China Zhuhai Duty Free Enterprise Group was the winner of the China Amateur Basketball Open for two consecutive years in 2006 and 2007. The team comprises of former national and national youth players. Some of the players are plying their trade in the Chinese professional league (CBA). </p>
+              <p>The team is made up of seasoned cagers Zhao Renbin, a former international, Sun Zhongcheng and Liu Hailong.
+                The team is no stranger to the Malaysian basketball scene, having played against the Malaysian national team in 2007 as the team was gearing up for the Korat SEA Games in Thailand.              </p>
+              <p>In May, the National Basketball League (NBL) All Stars played against the Zhuhai team in which the visitors lost by 10 points.
+            Don’t expect any mercy from the Zhuhai Duty Free lads as they plan to make their mark in this coming MIBC.</p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="teamrosters.htm#teamanalysis"><img src="/site_files/icon_gotop.gif" width="33" height="14" /></a></div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="48" bgcolor="#FFDFAE"><a name="tpe">
+            <div align="center" class="style11">CHINESE TAIPEI PURE YOUTH CONSTRUCTION TEAM<br>中华台北璞园建筑</div></td>
+          </tr>
+          <tr>
+            <td height="38" class="style16"><p>与2008年马来西亚国际篮球邀请赛冠军失之交臂的中华台北璞园建筑篮球队，借助连续两季晋级中华职篮季后赛（SBL）的高昂士气，希望一洗去年的颓势，放眼问鼎冠军杯。
+              
+              </p>
+              <p>成军於于2007年7月1日的璞园建筑，球队始於中华职业篮球联盟CBA时期宏国象篮球队，曾在四个球季创下三连霸的辉煌纪录，在国内享有一定的声誉。              </p>
+              <p>4名代表台湾参加今年琼斯杯的战将洪志善、林金榜、吴建龙和蔡文诚将披上璞园建筑的战衣亮相本届赛会，而且在9月杪前往日本冲绳参加邀请赛，与日本BJ联盟冠军冲绳国王队交手，在当地受到热烈的欢迎。</p>
+            <p> 虽然最终以87比109落败，但能够和拥有4名洋将助阵的对手纠缠到底，让璞园战将学会外籍球员的全方位打法，相信此次出征吉隆坡，肯定可以派上用场，争取比上届更好的表现。</p></td>
+          </tr>
+          <tr>
+            <td height="38" bgcolor="#ECF5FF"><br /><p>The Pure Youth Construction team from Chinese Taipei comes to the Malaysian International Basketball Championship (MIBC) with a reputation to upkeep.
+              
+              </p>
+              <p>Having played bridesmaid in the inaugural event last year, Pure Youth won four matches only to lose to Malaysia in the final match. 
+                
+              Living up to their name, the Pure Youth Construction lads are the youngest team in the Super Basketaball League (SBL) – the professional league in Chinese Taipei.</p>
+              <p> The team advanced to the SBL playoffs (semi finals) for the past two years (2008 and 2009).
+                
+                Among those representing Pure Youth Construction include Huang Chih-Shan, Lin Chin-Pang, Wu Chien-Lung and Tsai Wen-Cheng. All four represent Chinese Taipei in this year’s William Jones Cup.              </p>
+              <p>The ‘contractors’ play fast ball with all their players capable of shooting from any position. Even their centre is able to make three-point shots.
+                
+            Expect some redevelopment done on the courts as the Pure Youth Constructions draft, engineer and construct their way to a possible title finish in the MIBC this time around.</p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="teamrosters.htm#teamanalysis"><img src="/site_files/icon_gotop.gif" width="33" height="14" /></div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="48" bgcolor="#FFDFAE"><a name="hkc">
+            <div align="center" class="style11">HONG KONG CHINA TEAM<br>中国香港</div></td>
+          </tr>
+          <tr>
+            <td height="38" class="style16"><p>组军年余的香港队希望借助今年的马来西亚国际篮球邀请赛厉兵秣马，全面备战今年杪在自家门前举行的第五届东亚运动会。
+              
+              </p>
+              <p>进入青黄不接的转折期的香港队，在去年马来西亚国际邀请赛5战全败，忝居末席。这次卷土重来，同样以年轻战将为主，希望通过以打代练，和高水平的对手交锋以提升球员的水平，准备在香港举行的东亚运会有一番作为。</p>
+              <p> 香港队为积极备战2009年底在香港举行的东亚运会，已於一年半前重组香港队。这次重组加入多位有潜质的年青球员, 不过主力仍是参加东亚运动会的主力球员。</p>
+            <p> 港队球员虽然身材不算高大,  但打法以快速反击为主, 配合准绳的外投为特色，罗意庭、方诚义及刘子健等人将担当重任上阵。</p></td>
+          </tr>
+          <tr>
+            <td height="38" bgcolor="#ECF5FF" ><br /><p>Do not let the fresh faces fool you.
+             </p>
+              <p> This seem to be the warning posed by the Hong Kong China team who are all out to stamp their authority in the region despite having lost a large chunk of their seasoned campaigners.</p>
+              <p> Most of the senior players quit the scene some two years ago, prompting the Hong Kong Basketball Association to re-organise and restructure the national squad 18 months ago. A number of young talents were roped into the team as they gear up for the East Asia Games hosted by Hong Kong later this year.</p>
+              <p> Using the Malaysian International Basketball Championship (MIBC) as the perfect avenue to gear up for the East Asia Games, the Islanders will be sending a strong side to expose and gain experience with various opponents. They also hope to improve on the team work.</p>
+              <p> Without doubt, the Hong Kong China team is well prepared this time around compared to the team that participated in last year's edition in which they lost five matches in the MIBC and were placed last.
+                
+            With a reformed attitude and banking on the likes of Lo Yi Ting, Lau Chi Kin, Poon Chi Kin and Fong Shing Yee, the Hong Kong China team are set to spring some surprises and set the court on fire.</p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="teamrosters.htm#teamanalysis"><img src="/site_files/icon_gotop.gif" width="33" height="14" /></div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="48" bgcolor="#FFDFAE"><a name="kor"><div align="center" class="style11">KOREA CHOSUN UNIVERSITY<br>韩国朝鲜大学</div></td>
+          </tr>
+          <tr>
+            <td height="38" class="style16"><p>或许大家都对韩国朝鲜大学很陌生，相信秉持一贯的传统阿里郎式球风，这支马来西亚国际篮球邀请赛的新军会让球迷刮目相看。
+              
+              </p>
+              <p>朝鲜大学在韩国教育界名列前茅，于1946年建校以来已培育出15万多名毕业生，和另一间学府庆熙大学并驾齐驱，不仅学术成绩卓越，在运动方面也产生不少的杰出运动员。              </p>
+              <p>他们在2000年夺得第81届全国运动会冠军，并且在2002年的MBC全国大学联赛称霸，在国内堪称数一数二的篮球强旅。</p>
+            <p> 这次前往吉隆坡，虽然抱着与强队切磋，让球员更快成长的目标，可是以韩国运动员的天生特质，一上到战场就不会善罢甘休，必定让其他对手吃尽苦头，相信会给球迷带来精彩的好球。</p></td>
+          </tr>
+          <tr>
+            <td height="38" bgcolor="#ECF5FF" ><br /><p>A rich tradition in academic excellence - this phrase best represents Chosun University.</p>
+              <p> Nevertheless, it has not stopped the Korean university from extending their credentials to the basketball courts.
+                Established in the 1940s, Chosun University grew from a learning institution to a research center – as evident in the setting up of the Bio-Materials Research Institute in 2000.
+              It was also the same year which saw the varsity basketball team's development into a force to be reckoned with. </p>
+              <p>The university lads managed a podium finish in the 81st Annual National Athlete competition in 2000 and went on to win the MBC National University Basketball tournament two years later. 
+              Chosun University were also winners of the National Basketball Contest in 2003. </p>
+              <p>Among its well decorated players who are set to play ball in the Malaysian International Basketball Championship (MIBC) include Baek Seung Ho, Lee Dae Yeon, Joung Jin Gon, Baek Jung Hyun, Jeon Jae Woo and Kim Dong Woo.            </p>
+            <p>While their names may not ring a bell in this region, the cagers from Chosun Univerisity are certainly no pushovers. Expect some brainy moves and well planned strategies as the Koreans aim to head back home with fond memories and smiles on their faces. </p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="teamrosters.htm#teamanalysis"><img src="/site_files/icon_gotop.gif" width="33" height="14" /></div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="48" bgcolor="#FFDFAE"><a name="mas"><div align="center" class="style11">MALAYSIA MEN'S TEAM<BR />马来西亚男子队</div></td>
+          </tr>
+          <tr>
+            <td height="38" class="style16"><p>放弃聘请洋将助阵，以纯本土战将上阵，马来西亚国家男篮队欲卫冕国际篮球邀请赛冠军不易。
+              
+              </p>
+              <p>国家队主帅吴清发决定不用外援，以全本土球员为班底，与另5支强队周旋到底，希望借助在自家门前举行的比赛，给予本地球员磨练的机会，而且不会订下任何的目标，尽最大的努力去打好每场比赛。              </p>
+              <p>去年得到两名美国籍外援贾玛布朗和布里治沃特的效劳，大马男篮队以4胜1负夺冠，虽然意外负印度，但面对表现出色的新加坡腾飞之狮、庆熙大学和璞园建筑等强旅时，本土战将都有不俗的表现，场场精彩演出让球迷叫好。</p>
+              <p> 这次放弃聘用外援，加上主力苏永庆受伤、黄万新与谭健鸿因工作问题弃战，不过得到古加尼和蔡子贤归队，才不至于实力暴跌。            </p>
+            <p>吴清发已经声明，卫冕任务艰巨，而且也不排除会排名第6，只求战将们打出自己的风格，准备和其他对手顽抗到底。</p></td>
+          </tr>
+          <tr>
+            <td height="38" bgcolor="#ECF5FF" ><br /><p>It has been a quiet year for the Malaysian men’s basketball team.
+              </p>
+              <p>As the organisers of the Laos SEA Games decided not to contest the sport, the national cagers have only been playing a string of friendly matches and a handful of international tournaments in the region.              </p>
+              <p>Nevertheless, this has changed as national player Chee Li Wei believes the Malaysian International Basketball Championship (MIBC) will serve as a good avenue to gauge the team’s performance this year.
+                “The MIBC is good for us as it will set a certain benchmark over our capabilities and true potential for the year,” said Li Wei.              “It also gives the opportunity for the new faces to experience playing in an international tournament and this is a good chance for the team to shape up its youngsters.”              </p>
+              <p>Surprisingly, Li Wei singled out the Philippines and Chinese Taipei teams to be the favourites of the tournament.
+                “I’ve studied in China before and I know the Chinese team pretty well. They may have several new faces in the team but I guess the Filipinos and Chinese Taipei players are the teams to watch out.”
+            “However, we must respect all opponents and treat them equal. Anything can happen on the court.”              </p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="teamrosters.htm#teamanalysis"><img src="/site_files/icon_gotop.gif" width="33" height="14" /></div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="48" bgcolor="#FFDFAE"><a name="phil">
+              <div align="center" class="style11">PHILIPPINES PHAREX BIDANG GENERIX TEAM<br>菲律宾法乐仕</div></td>
+          </tr>
+          <tr>
+            <td height="38" class="style16"><p>我们不会让你感到“疼痛”！
+             </p>
+              <p> 法乐仕才第2年角逐菲律宾次级联赛就夺得亚军，成为一支亮眼的新军。他们获得菲律宾国内著名的药剂集团法乐仕（Pharex Generix）全力资助，集合了部份已经毕业的大学生和高年级学生，平均年龄不到25岁，年纪最大的也仅26岁，将快狠准发挥得淋漓尽致。              </p>
+              <p>此行前来吉隆坡参赛，主要是为10月开打的联赛备战，队中有5名战将凭着上季的出色表现，已获擢升为PBA职业球员，为球队注入了一股新动力。              </p>
+              <p>法乐仕在菲律宾国内篮坛被称为“药罐子”，不过他们绝对不是躺在床上的病人，而是能让对手全身麻醉的“快刀手”。年轻力壮的卡里纳托、玛佐、阿奎拉和默勒格里多都是值得注意的球星，而且这次队中还隐藏着“灌篮王”埃斯比里杜。
+                
+                这名身高6尺3的24岁小伙子，在2006年代表菲律宾东方大学参加大学联赛时，出乎意料击败2004年的冠军得主，夺得灌篮王美誉。            </p>
+            <p>法乐仕有着菲律宾的传统快打球风，相信会在本届的国际篮球邀请赛给球迷带来高潮迭起的赛情，是一支不可忽视的黑马。</p></td>
+          </tr>
+          <tr>
+            <td height="38" bgcolor="#ECF5FF" ><p><br />
+              They wont be there to heal your pain. 
+              </p>
+              <p>Pharex Bidang Generix are eager for an onslaught of all sorts as they partake in the Malaysian International Basketball Championship (MIBC).
+              Financed by Filipino pharmaceutical giants Pharex Generix, a division of Pascual Laboratories Inc, the team comprises of recent graduates and upper class college students from the colourful and cultural archipelago.</p>
+              <p> Basketball runs deeply in the veins of every Filipino and thus it comes to no surprise that Pharex Generix were placed second in the Philippine Basketball League conference. The team is in the midst of gearing up for the new season which is scheduled in October.              </p>
+              <p>Nicknamed 'The Medics' by local fans, Pharex has a handful of promising stars including Michael Galinato, Ian Mazo, Raymond John Aguilar and John Carl Meligrito.
+              Also back in the squad is none other than former slam-dunk king Elmer Espirity of University of the East.</p>
+            <p> Expect loads of fast paced dribbling, excellent rebounds and slam dunk actions as Pharex are set to inject much glam and style in the 2nd edition of the MIBC.</p></td>
+          </tr>
+          <tr>
+            <td><div align="right"><a href="teamrosters.htm#teamanalysis"><img src="/site_files/icon_gotop.gif" width="33" height="14" />          </div>
+        </table>        
+      </td>
+    </tr>
+  </table>
+  <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style7 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style10 {
+	font-size: 13px;
+	font-style: italic;
+}
+.style11 {
+	font-size: 14px;
+	font-style: italic;
+}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" colspan="2" bgcolor="#BBFFC7"><span class="style7">09.10.2009 Our girls go down fighting</span></td>
+          </tr>
+          <tr>
+            <td width="97%" rowspan="2"><span class="style10"><br />
+              by Chen Hui Jing</span><br>
+              <p>As Head Coach Tan See Wah mentioned, there will always be the pressure of expectation when playing in front of a home crowd. Perhaps that was what plagued our girls tonight.</p>
+              <p>Kew Suik May opened the match with a 3-pointer, but as the game went on, it was evident that it was not a good night for the Malaysian shooters. Both teams started off tight and shots from both teams refused to fall. The Chinese, with their size advantage over our girls pounded the ball inside and managed to score in the paint. The first quarter ended with a score of 7-14.</p>
+              <p>Our girls tightened their defense in the 2nd quarter, scoring 4 in a row off of Chinese turnovers. However, the Chinese had an obvious size advantage inside and managed to score off second shot opportunities. <br />
+                </p>
+              <p>The taller Chinese team made it hard for our girls to penetrate the inside and with our shooters cold from the outside, the Chinese pushed their lead to 10 at the six-minute mark. The Guangzhou girls found their rhythm and started hitting shots from the perimeter as well. <br />
+                </p>
+              <p>Our girls, though smaller in size, were relentless in their pursuit of the ball and managed to outrebound the much taller Chinese 20-17 in the first half. However, our girls did not shoot the ball well during the first half, hitting only a dismal 23% from the field. </p>
+              <p>The Chinese, on the other hand, found their groove towards the end of the second quarter, shooting 40% from the field and extending their lead to 16 going into the halftime break.</p>
+              <p>The Malaysians continued with the tenacious defense and in the second half and started hitting from the outside, with Kew Suik May, Goh Beng Fong and Ang Siew Teng scoring from beyond the arc. Our girls went on a 16-5 run and managed to cut the lead to 10 by the two-minute mark of the third quarter. </p>
+              <p>However, our girls were unable to find their shooting touch and even though they outworked their opponents on defense and fought hard for every rebound, their meager shooting percentage allowed the Chinese to maintain a double-digit lead throughout the second half.</p>
+              <p>Kew Suik May hit two 3-pointers near the end of the fourth quarter but it was too little too late and the game ended with a final score of 54-66. A glaring statistic on the scoresheet was points in the paint, in which the Chinese outscored our girls 42-16. The Malaysians only managed 28% from the field while the Chinese made 46% of their shots.</p>
+            <p>Three Guangzhou players scored in double figures, Yang Li Wei and Qiu Si Yue both had 19 points apiece. While center, Yu Dong, had a double-double with 14 points and 11 rebounds. </p>
+            <p>Kew Suik May was the only Malaysian player to find her shooting touch, making 6-of-13 shots from beyond the arc, ending the night with 20 points. Ang Siew Teng and Pee Yann Yann scored 9 points and 8 points respectively.</p>
+            </p></td>
+            <td width="3%"><div align="right">
+             <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p><img src="/site_files/wmas_chn_article.JPG" alt="MAS vs CHN" width="200" height="306" align="baseline" /></p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><p>（吉隆坡9日讯）马来西亚娘子军拉不响首炮，以54比66不敌中国广州青年队。 虽然刚在印度拿下亚洲女篮赛乙级冠军，但回到自家门前作战的马来西亚队未能抵住主场压力，尽管篮板球（37比35）还可与对手一拼，然投篮命中率在对手的严防下偏低，仅得22%，反观广州青年队在国青邱思月独取19分的带领下，取得46%的命中率。 </p>
+            <p>邱淑媚和许淑殷的3分球为马来西亚拉开战幔，惟失球率偏高加上防守欠积极， 让广州青年队以14比7领先首节。 马来西亚次节加强防守后略见起色，但却难阻中国国青邱思月和国家少年队杨力维的强势进攻，两人合取25分，助中国以34比18结束上半场。 </p>
+            <p>主队在下半场开端3分球告急，加上广州青年队密不透风的防线，多次出手落空，幸好彭燕燕多次偷袭成功， 配合吴明凤和邱淑媚的适时3分球，才从21分最大落差逼近30比43。 淑媚在末节球风大起，3次射穿对手3分篮框，惜独木难撑，马来西亚最终以12分饮恨。 </p>
+            <p>马来西亚仅淑媚得分达双，投进6个3分球贡献20分；广青的邱思月和杨力维各有19分进帐，195公分的高妹于东添14分。 </p>
+            <p class="style11">南洋商报 阮美琪报道 </p></td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t2" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

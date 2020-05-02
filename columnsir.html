@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC 时说新语</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="时说新语" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/headersir.png" width="215" height="71" /></p>
+      <table width="100%" border="0">
+        <tr>
+            <td height="35" colspan="2" bgcolor="#BBFFC7"><strong>11 October 2009...</strong></td>
+          </tr>
+          <tr>
+            <td width="22%" height="271"><img src="/site_files/seewah.jpg" alt="Tan See Wah" width="122" height="135" /></td>
+            <td width="78%" rowspan="2"><p><br>
+              Wow! I never expected the match between MAS and Singapore Home United to turn out as such a thriller until the final whistle. </p>
+              <p>The crowd in the stadium which had been quiet and resigned to the fact that all were lost for the MAS team which was trailing by 6 points as time was running out on them. The 3-point-play by Pee Yann Yann suddenly woke the crowd out of its slumber and the stadium erupted into cheers and excitement. </p>
+              <p>As the MAS players lined up for the end-line throw-in with only 5.8 seconds left, there was silence and an air of expectation in the stadium. The ball was passed to Ang Siew Teng who moved away from the pack and she calmly took the shot from beyond the arc.The ball went through the net to the thunderous applause and wild shouts of the spectators in the arena. The unexpected happened!              </p>
+              <p>As a coach, I have lived through many of these 1-point win situations and I am very proud of the players who were able to focus and executed the set-piece to instruction in this electrifying moment when so much depended on just one shot. After that it was left to Lady Luck to decide our fate.                </p>
+              <p>Yann Yann played a great role in securing this win for us and I believe she can perform at a higher level if she puts more urgency into her play.</p>
+              <p> Our final game will be against Chinese Taipei Hai Shan High School tonight at 6:15 p.m. We expect another tough match as the Chinese Taipei lasses are no pushovers and they have shown their element in their two previous  games. </p>
+              <p>This high school team came with strong credentials as it has won the Chinese Taipei High School Basketball League (HBL) 3 consecutive years It has the services of 4 players in the current National Youth team.                </p>
+              <p>The High School team mainly uses a full and half court 1- 2- 2 press in their defense. The team has no outstanding shooters but they rush for the offensive boards after every shot.
+                
+                I predict this will be a good game and as this is the last day of the MIBC, grab this chance and come and cheer your home team.</p>
+            </p></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="35" colspan="2" bgcolor="#BBFFC7"><strong>10 October 2009...</strong></td>
+          </tr>
+          <tr>
+            <td width="22%" height="271"><img src="/site_files/seewah.jpg" alt="Tan See Wah" width="122" height="135" /></td>
+            <td width="78%" rowspan="2"><br>As expected, the MAS  girls could not handle the situation and their early jitters caused  them to make numerous passing mistakes in the match against the  Guangzhou Youth team. The poor shooting that night made matters worse  as the players were not able to settle down. Fortunately the defense  held and managed to keep the losing margin close.<br />
+              </p>
+</p>
+            <p align="justify">This was an acid test for  many of the MAS players who were playing their maiden match in front  of a home crowd. Guangzhou Youth Team has the service of 5 national  Under-18 and Under-16 players and they are a well trained team. I  was looking forward to the match as it would give me some insight  on the characters of the younger players when they are faced with  stronger opposition and areunder pressure to deliver.<br />
+            </p>
+            <p align="justify">The second half saw a  more settled MAS team taking the court. Kew Suik May hit a good patch  and scored some valuable 3-pointers to keep us going in our fight. The  often reliable, hard-working Goh Beng Fong was a pale shadow of her  true capabilities and shooter, Ang Siew Teng, was totally off the mark.<br />
+            </p>
+            <p align="justify">I have to admit, the  Guangzhou Youth team played better organized basketball and showed  more maturity in their play despite their young age. They took their  chances well and capitalized on the mistakes we made. The MAS team  could not contain the three-pronged attack of Yu Dong (No 14) in the  paint, Qiu Siyue (No. 8) at the wing and Yang Li Wei (No. 4) as the  point guard.<br />
+            </p>
+            <p align="justify">All is not lost for the  MAS team as we have two more matches to redeem our confidence. We  have to this MAS team time to mature during this  transitional period. </p></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="35" colspan="2" bgcolor="#BBFFC7"><strong>9 October 2009...</strong></td>
+          </tr>
+          <tr>
+            <td width="22%" height="256"><img src="/site_files/seewah.jpg" alt="Tan See Wah" width="122" height="135" /></td>
+            <td width="78%" rowspan="2"><br />The MIBC is entering into its third day of play with the women category starting today. This MAS women team which is a blend of elite, back- up and junior players will be playing its first game in front of a home crowd. </p>
+              <p>Playing at home is never an envious task especially for the rookies as crowd expectation and self-evaluation will be at the back of their minds. However, I believe the MAS women team will get over these set-backs once the games begin. </p>
+              <p>Reviewing  the performance of all the men’s teams that played so far, it will be noticed that teams that play hard and organized defense eventually come off as eventual winners. </p>
+              <p>Good defensive basketball is about forcing the offensive team in making mistakes so that the defensive team could cash in on these turnovers to convert them into points for their team. After all, basketball is about out-scoring your opponents and really making it difficult for them to score against you. </p>
+              <p>A team playing good and well- organized defense is a sight to behold as you will see players rotating and moving into the open spaces on the floor, thus creating offensive problem for the opponents. Believe me, it takes a lot of heart to be a great defensive player. If you are not a good shooter, work hard on your defense and you can still make the team!</p>
+              <p>In my opinion, the Chinese Taipei team is a well-trained team and it has not played to its potential yet. Their variation in defense should cause some concern to their opponents. We will get to see this when it takes on host Malaysia tonight at 8:15 p.m. as they both have come off with a clean slate of two wins each.</p>
+              <p> Not often do we see international basketball competition in KL and the 2nd MIBC, which has attracted foreign teams from Korea, Chinese Taipei, China, Philippines, Hong Kong and Singapore will be a good ground for our aspiring young players to learn something from the better players here. The competition is in progress now and it will end on the 11th October (Sunday). </p></td>
+          </tr>
+          <tr>
+            <td height="492">&nbsp;</td>
+          </tr>
+                <tr>
+                  <td height="35" colspan="3" bgcolor="#BBFFC7"><strong>7 October 2009...</strong></td>
+          </tr>
+          <tr>
+            <td width="22%" height="256"><img src="/site_files/seewah.jpg" alt="Tan See Wah" width="122" height="135" /></td>
+            <td width="78%" rowspan="3"><br />
+              <p>With the cancellation of the basketball event in the coming SEA Games in Laos this December, basketball in this region suffers another set-back as this is the second time in 5 years basketball is not competed in the SEA Games. Basketball development will be affected as government funds to prepare the teams and send them for overseas exposure matches will be limited. Inevitably, some quality senior players would be considering early retirement from the competitive international basketball scene. </p>
+              <p>The  Malaysia women's team does not want to be trapped in this situation and has taken proactive measures to expose the next generation of players to international competition. Starting from the recent 31st William Jones Cup in Chinese Taipei in August and the 23rd FIBA Asia Championship for Women in Chennai, India, in September, back-up squad players have been included into the team to join the elite base players in international competition. </p>
+              <p>So far back-up squad players who have had this opportunity include Nur Izzati, R. Kalaimathi, Choo Sook Ping, Chen Hui Jing, Ang Siew Teng and Pang Hui Pin. The other two student players, Yap Ching Yee and Saw Wei Yin, could not be included into the above competition because of the ruling of the Ministry of Education forbidding students participating in overseas competitions due to H1N1. </p>
+              <p>The 2nd MIBC in Kuala Lumpur will give these two players the rare opportunity to expose themselves to high level international competition which is necessary in developing young players. 
+                
+                Though the Chinese Taipei Hai-San High School team is a high school team but it is a well- trained team under the Chinese Taipei Telecommunication team, which is one of the top women teams in Chinese Taipei. The MAS team sparred with them prior to the recent William Jones Cup in Chinese Taipei in August. </p>
+              <p>The Singapore Home United Basketball Club which has the service of 3 China-born players and 2 Japanese, is a force to be reckoned with as this team won the KL Invitation in November last year. The unknown China Guangzhou Youth Team has the best height average amongst all the women participating teams. </p>
+              <p>The MAS team will not under-rate any of the teams and I expect competition will be keen as all the participating teams are prepared for this event. 
+                
+            The MAS team will look forward to Kew Suik May, Goh Beng Fong, Pee Yann Yann and Yong Shin Min to lead this team.</p></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+      </table>
+      </p></td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

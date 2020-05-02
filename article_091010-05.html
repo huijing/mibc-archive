@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style7 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style10 {
+	font-size: 13px;
+	font-style: italic;
+}
+.style12 {
+	font-size: 14px;
+	font-style: italic;
+}
+.style11 {font-size: 14px}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" colspan="2" bgcolor="#BBFFC7"><span class="style7">10.10.2009 Our boys come back from behind to win</span></td>
+          </tr>
+          <tr>
+            <td width="97%" rowspan="2"><span class="style10"><br />
+              by Chen Hui Jing</span><br>
+              <p>It was a good night for the Malaysian teams as both the men and women came back from behind to win their respective games. Our boys roared back from a deficit that was a large as 16 at one point to clinch their third win of the tournament, beating the Chosun University team 97-83.</p>
+              <p>The Koreans opened the game with a 9-2 run, as our boys had yet to find their shooting touch. The Chosun University boys shot the ball well hitting four 3-pointers in the first quarter. The Malaysian team responded with inside scoring, making most of their baskets in the paint. The Koreans led by 10 at the end of the first quarter.<br />
+                <br />
+                The Chosun University boys continued to light it up from three-point range and 
+                Kim Da Woon hit a shot to give the Koreans their biggest lead of the night at 16. The Malaysians buckled down and tightened their defense to prevent the lead from ballooning any further. </p>
+              <p>Loh Shee Fai came into the game with 5:36 remaining in the second quarter and scored 7 points off the bench. Ho Yeoh Loong drained a three-pointer with 27 seconds left on the clock to cut the Korean lead to 5.</p>
+              <p>Shots started to fall for the Malaysians and a 3-pointer by John Ng tied the game at 68 with eight minutes left in the game. Both teams found their shooting range and traded baskets up and down the floor. A 3-pointer by Guganeswaran gave Malaysia a one-point lead with 5:45 remaining and the Malaysians never looked back. The Malaysians won the game 93-87.</p>
+            <p>Malaysia had four players scoring in double figures. Chee Li Wei led the way with 26 points making 7-of-10 from the field and hitting all 12 of his free throw attempts. Loh Shee Fai, who had won the 3-point shootout earlier this evening, carried on his hot shooting streak over to the game and hit 8-of-10 from the field for 18 points. Guganeswaran Batumalai also scored 18 points, hitting 3 of his 5 attempts from beyond the arc, and John Ng chipped in with 12 points.</p>
+            <p>The Chosun University side also had four players scoring in double figures. Joung Jin Gon scored 19 points and dished out 8 assists. Center, Kim Da Woon also contributed 18 points. Kim Hwi Min and Baek Ho Seung scored 17 points and 11 points respectively.</p></td>
+            <td width="3%"><div align="right">
+             <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p><img src="/site_files/mas_kor_article.JPG" alt="MAS vs KOR" width="200" height="308" /></p>
+              <p>&nbsp;</p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><p><br />
+              （吉隆坡10日訊）第2屆馬來西亞國際籃球邀請賽今日進入第4天爭奪，東道主馬來西亞頂著對手的三分炮彈后，終于在最后一節的爆發，以93比87力挫韓國朝鮮大學，重回勝利軌道。
+             </p>
+              <p> 儘量朝鮮大學內線吃虧，但他們利用精準的外線讓大馬陷入若戰，上半場韓國人在三分線就出手20次，並轟中9球，命中率達45％。              </p>
+              <p>此外，穩健的團隊命中率，讓朝鮮大學在首節結束就建立10分（28比18）的領先優勢。</p>
+              <p> 朝鮮大學還一度取得14分的差距，但羅樹輝和何耀隆在次節末端的爆發，聯手拉出一波12比3的攻擊波，讓大馬成功在半場結束時將比分縮小至5分（47比42）。              </p>
+              <p>下半場黃有成爆發一人連得8分，此時大馬只落后4分（50比54），而大馬也改打全場盯人以阻斷對手的三分炮彈，此后大馬帶著3分劣勢進入末節。              </p>
+              <p> 黃有成在比賽還有7分多鐘時，轟入振起全隊士氣的三分球，並將比分扳成68平，此后雙方緊咬比分，並多次將比分追平。</p>
+            <p> 最后5分鐘古加尼射進反超的關鍵三分球，讓主隊以78比77領先，此后主隊火力再度爆發打出一輪9比3的攻擊波，將比分擴大為88比80，最終朝鮮大學宣告無力回天，以6分之差落敗。</p></td>
+          </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t2" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

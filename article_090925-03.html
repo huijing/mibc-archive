@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style6 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style7 {font-size: 14px}
+.style8 {font-size: 12px}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" bgcolor="#BBFFC7"><span class="style6">25.09.2009  大馬國際籃球邀請賽：古加尼蔡子賢歸隊‧本地薑對抗列強</span></td>
+          </tr>
+          <tr>
+            <td><br>
+              <span class="style8">星洲日報／體育‧2009.09.25                </span></p>
+              <p class="style7"><span class="style7">（吉隆坡）大馬男籃國家隊將以純本土球員角逐10月7至11日在大馬籃總體育館舉行的第二屆大馬國際籃球邀請賽，不奢求衛冕，只求藉此賽會讓隊員在與列強交手時得到磨練，同時為緊接著掀戰的首屆東南亞職業籃球聯賽（ABL）作好準備。</span></p>
+              <p class="style7">大馬男籃去年在兩位外援助陣下，在單循環賽事中以4勝1負的戰績勇奪桂冠，但大馬籃總這次決定不聘請外援，希望以本土球員去對抗東亞列強及菲律賓的聯賽隊伍。</p>
+        <p class="style7">大馬男籃主帥吳清發今日（週五，9月25日）表示：“我們去年奪冠，在單循環中僅敗給印度，但這次決定不用外援，大馬籃總希望藉此賽會考驗一下本土球員。我們不會瞄準贏得冠軍，也沒有預期會贏得任何勝利，純粹盡我們最大的努力去參賽。去年摘冠，今年也許第6名。”</p>
+        <p class="style7">大馬男籃本屆將受到上屆亞軍台灣璞圓建設、中國珠海免稅集團、韓國朝鮮大學、菲律賓PBL（第二級聯賽）冠軍隊法樂仕（Pharex）和香港的挑戰，6隊同樣以單循環方式進行比賽。</p>
+        <p class="style7"><strong>4隊角逐女子賽事</strong></p>
+        <p class="style7">本屆大馬國際籃球邀請賽還增設了女子賽事，大馬女籃隊將與台灣海山高中、中國廣州青年隊、新加坡內政聯隊通過單循環賽事決出冠軍得主。</p>
+        <p class="style7">大馬男籃的陣容已揭曉，而甫結束印度亞錦賽任務的大馬女籃將在稍後才公佈參加本次邀請賽的名單。</p>
+        <p class="style7">吳清發表示：“我們這次缺少了3位好手，蘇永慶因傷缺陣，譚健鴻和黃萬新則因工作問題而無法參賽。但我們獲得了古加尼和蔡子賢歸隊助陣，所以在控衛位置上應該不成問題。”</p>
+        <p class="style7"><strong>馬男籃備戰兩大賽會</strong></p>
+        <p class="style7">大馬男籃目前正備戰兩大賽會，另一項為緊接著上演的東南亞職籃聯賽，大馬將以吉隆坡猛龍隊的名義出擊，首戰將於10月14日對陣汶萊梭魚。</p>
+        <p class="style7">吳清發說：“大馬男籃一線隊將參加大馬國際邀請賽和東南亞職籃聯賽，蘇永慶、譚健鴻和黃萬新也無法參加職籃聯賽，而同一時間蘇永慶將以教練身份率領二線隊員及青年球員前往台灣參加10月14至18日的花蓮觀護杯國際籃球邀請賽。”</p>
+        <p class="style7">“東南亞職籃聯賽的名單將在稍後公佈，我們屆時肯定會用兩位外援（東南亞以外地區），至於3個東南亞外援的名額有可能只會用一兩個，甚至有可能放棄引進東南亞外援。”</p>
+        <p class="style7">此次邀請賽的首2天門票各為15令吉，最後3天各為20令吉，貴賓席門票為每天各50令吉。兒童票和學生票售價10令吉，但每天只限200張，同時一連5天的季票是70令吉，同樣只限200套。</p>
+        <p class="style7">今年的大馬國際籃球邀請賽還增設了兩項個人技術大賽，每隊可派2人參加灌籃賽，而男女各隊可各派1人角逐3分球挑戰賽。</p>
+        <p class="style7">這兩項個人技術大獎的前3名將分別獲得New Balance贊助的1000、600和400令吉的體育用品禮券。</p>
+        <p class="style7">不過，此次的邀請賽並沒有獎金，但冠軍隊可獲得獎杯。</p>
+        <p class="style7"><strong>大馬國際籃球邀請賽：增設灌籃3分球賽</strong></p>
+        <p class="style7">大馬籃總將於週六（9月26日）起一連2天在吉隆坡武吉免登廣場（BB Plaza）舉辦嘉年華，在現場預售比賽門票，接著於10月3及4日在萬達廣場（1Utama）主辦第二場嘉年華，屆時將舉行一項3人籃球賽，並且邀請國手擔任訓練營的導師，指導15歲和18歲以下的參賽者。</p>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

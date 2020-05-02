@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC News</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style6 {
+	font-size: 14px;
+	font-weight: bold;
+}
+.style7 {font-size: 14px}
+.style8 {font-size: 12px}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="news" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/newsupdates.gif" width="215" height="71" /></p>
+        <table width="100%" border="0">
+          <tr>
+            <td height="35" bgcolor="#BBFFC7"><span class="style6">25.09.2009 大马国际男篮邀请赛 国油队本土军保冠</span></td>
+          </tr>
+          <tr>
+            <td> <span class="style8"><br />‧南洋商报</span>
+              <p class="style7">（吉隆坡25日讯）仅保留上届4名旧将的卫冕冠军马来西亚国油队，虽然不期望在第二届马来西亚国际男篮邀请赛顺利蝉联，但会全力以赴争取佳绩。</p>
+          <p class="style7">国油在去年的首届赛会仅输给（印度），随后接连斩落中华台北璞园（上届亚军）、新加坡腾飞之狮（上届季军）、香港和韩国庆熙大学，最终在这场单循环赛中爆冷登顶。</p>
+          <p class="style7">大马国油队教练吴清发今天表示：“我们今次没有聘请外援，目的就是要全力催谷我们的本土战将。</p>
+          <p class="style7">“我们要的不是胜利，而是球员们的努力和表现。最重要的是把他们打造成更强大、更优秀的球员。”</p>
+          <p class="style7"><strong>不聘外援</strong></p>
+          <p class="style7">吴清发表示，目前有逾20名球员参加集训，备战下个月3个赛会，除了大马国际男篮邀请赛MIBC（10月7至11日），国家队还会兵分两路，角逐首届东南亚职业男篮联赛ABL（10月14日至2010年1月24日）和花莲观护杯国际篮球邀请赛（10月14至18日）。</p>
+          <p class="style7">少了上届从澳洲聘请的两名美国籍外援贾玛布朗和布拉德布里奇沃特的助阵，国油队的实力难免受影响。此外，上届主力谭健鸿和黄万新也因工作关系缺阵，而仍有伤在身的苏永庆将出任助理教练。</p>
+          <p class="style7">“不过，两名得分卫古加尼和蔡子贤归队，加上这些球员在我麾下训练好几个月了，所以在备战方面相当顺利，只待开赛前把他们的最佳状态催谷出来。”</p>
+          <p class="style7">国油从星期三起的连续5场比赛分别对垒中国珠海免税集团、香港、台湾璞园建设、韩国朝鲜大学、菲律宾次级联赛冠军法乐仕（Pharex）。</p>
+          <p class="style7">吴清发补充说，“参加ABL的吉隆坡龙队名单未定，因为球员及包括我在内，还未跟东主签约，至于观护杯赛，我们将以青年军为主。”</p>
+          <p class="style7"><strong>马来西亚国油队阵容</strong></p>
+          <p class="style7">邻队：陈江荣</p>
+          <p class="style7">球队经理：黄钟波；（副）林水龙</p>
+          <p class="style7">教练：吴清发；（副）苏永庆</p>
+          <p class="style7">裁判：黄崇明</p>
+          <p class="style7">球员名单</p>
+          <table width="49%" border="0">
+            <tr>
+              <td width="19%" class="style7"><div align="center">4</div></td>
+              <td width="81%" class="style7">何耀隆 （21岁，178公分）</td>
+            </tr>
+            <tr>
+              <td class="style7"><div align="center">5</div></td>
+              <td class="style7">颜坊峰（19岁，186公分）</td>
+            </tr>
+            <tr>
+              <td class="style7"><div align="center">6</div></td>
+              <td class="style7">魏川进（25岁，180公分）</td>
+            </tr>
+            <tr>
+              <td class="style7"><div align="center">7</div></td>
+              <td class="style7">蔡子贤（27岁，180公分）</td>
+            </tr>
+            <tr>
+              <td class="style7"><div align="center">8</div></td>
+              <td class="style7">李健宗 （23岁，185公分）</td>
+            </tr>
+            <tr>
+              <td class="style7"><div align="center">9</div></td>
+              <td class="style7">古加尼 （27岁，180公分）</td>
+            </tr>
+            <tr>
+              <td class="style7"><div align="center">10</div></td>
+              <td class="style7">郭添源 （18岁，198公分）</td>
+            </tr>
+            <tr>
+              <td class="style7"><div align="center">11</div></td>
+              <td class="style7">罗树辉（20岁，189公分）</td>
+            </tr>
+            <tr>
+              <td class="style7"><div align="center">12</div></td>
+              <td class="style7">关咏境（19岁，200公分）</td>
+            </tr>
+            <tr>
+              <td class="style7"><div align="center">13</div></td>
+              <td class="style7">陈利伟（26岁，197公分）</td>
+            </tr>
+            <tr>
+              <td class="style7"><div align="center">14</div></td>
+              <td class="style7">许伟德（26岁，193公分）</td>
+            </tr>
+            <tr>
+              <td class="style7"><div align="center">15</div></td>
+              <td class="style7">杨启益（21岁，195公分）</td>
+            </tr>
+          </table>
+            <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+            <td><div align="center">Back to <a href="/home.htm#newsupdates" class="type10bwb">News</a></div></td>
+          </tr>
+      </table>        </td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

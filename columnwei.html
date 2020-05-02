@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC 切中利害</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style6 {font-size: 14px}
+.style7 {font-size: 14}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="切中利害" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" alt="随想随谈" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/headerwei.png" alt="切中利害" width="215" height="71" /></p>
+      <table width="100%" border="0">
+                <tr>
+            <td height="35" colspan="2" bgcolor="#E1FFFC"><strong>10 October 2009...</strong></td>
+          </tr>
+          <tr>
+            <td width="77%" rowspan="2"><span class="style6"><br></span>
+              <p class="style6">哈哈，  赢了， 最后我们还是坚持下来了。在这一场和韩国朝鲜惊心动魄的大战中，我们成为了最后的胜利者。除了台湾队独自一秀外，  MIBC里其他五支队伍实力都非常接近。谁胜谁负，不比过还真的不知道呢。</p>
+              <p class="style6">今天还真的让我见识到什么是韩国的三分雨啊。每一次空档出手，就只能祈祷他们不进而已。甚至有时候我还会在场上惊叹的和邻近的队友说：他们真的很X准啊！当然比起上一届MIBC的韩国庆熙大学，这支朝鲜大学是逊色了一点。  但真的不能小看他们的三分球啊！  一个灌篮可以鼓起自己队友的士气，但一个凌厉的三分球却能深深打击对方的心灵。</p>
+              <p class="style6">幸好我们早就有了一定的心里准备，不然还真的吃不消啊。再次的很佩服发哥的临阵遣兵能力。  对于第 一节和第二节的半场松动盯人防守和2  3区域联防被对方识破以后  ，很快速的在第三节改变成半场的紧逼盯人，而且只要求让对方的内线球员得两分也不愿意让对方的几名射手轻松的投射三分。</p>
+              <p class="style6">比赛刚开始的时候，大家好像还没走出昨天比赛输给台湾璞园的阴影。加上连日的比赛，球员的体力也消耗了很多。感觉大家都好像没有什么动力似的，不像前几场那么积极。随着比赛的进展，球员的态度和不服输的心情总于摆正过来了。就像打仗那样，将军拼搏的精神最后一定会感染到部下。看到自己的队友卖命的奋斗，自己也会被感染。很庆幸这种良性的感染在半场休息后出现了。</p>
+              <p class="style6">从开始到结束，  教练就一直要求我们进攻他们的内线。确实，  他们的内线也比较薄弱一点。这时我的身高优势就很好的体现出来了，但是防守的脚步缓慢也为自己队友带来了不少困扰。在每个时段都有适当的英雄跳出来。关键时刻8号JOHN的两个果断三分，  7号子贤的两个中投 。  还有就是对后卫的严密施压防守，让对方的后场大脑突然失魂啊。表现最好的应该就是9号古加尼啦，一改前面几场的犹豫和不果断，几次的个人突破上篮和分球，加上突然在外施放冷箭，很好的带领我们反败为胜。当然这场比赛不只是他们三个的功劳啦，  这是大家团结一致努力的成果。</p>
+            <p class="style6">我很喜欢这场比赛后面时段的感觉。大家从一开场比较懒散，还有一种分离的感觉，互相感应不到对方。后来大家团结一致，场内场外的队员都投入到比赛里。这就是我们提倡的篮球概念---  热爱篮球，享受篮球，快乐篮球。  这都是篮球的魅力。 不亲身体验过这种感觉，是无法明白的。就是因为这样，我们都很难离开篮球。</p></td>
+            <td width="23%" height="243"><p align="right" class="style6"><img src="/site_files/liwei.jpg" alt="liwei" width="122" height="132" /></p>            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+                <tr>
+            <td height="35" colspan="2" bgcolor="#E1FFFC"><strong>9 October 2009...</strong></td>
+          </tr>
+          <tr>
+            <td width="77%" rowspan="2"><span class="style6">
+              <br>                <span class="style7">10月9日晚上与台湾璞园的比赛，再次凸显出我们大马男子队与其他亚洲球队的差距。 在今年四月份的时候，我随马六甲队到台湾进行了好几场的友谊交流赛。而其中一场惨败五十分的比赛就是和台湾璞园队。更耻辱的是当时每一节完毕的两分钟休息时间，我们都瘫坐在椅子上喝水休息。而他们却在做30秒的冲刺。这就是我们和他们的差距吗？ 我们甚至当他们热身的对手也不够格吗？（璞园建设在SBL里是排名第四的队伍）              
+              </p>
+              </span>
+              <p class="style7">不过这场MIBC的比赛可以说多少挽回了一点面子（输了后还满伤心难过的）虽然比分上我们只是输了个19分，他们后面也轮换了替补阵容。但是我感觉到在这四节比赛里我们也给他们制造了不少的麻烦。他们也很专业的全力和认真的去与我们比赛。</p>
+              <p class="style7">我可以感觉到其实发哥是很想把这场比赛拿下来的。奈何我们自己球员本身却没有这种本事。论身高我们不输对方，但是说到体力， 力量，速度和技术，我们却远远落后。其实有没有人真正去研究过为什么同是黄皮肤的人，为什么台湾人能做到的东西我们马来西亚人却做不到呢? 是环境吗？ 投入或专注不够吗？ 球员本身的态度和资质？ 教练不够专业？ 这应该是个很好的讨论话题。</p>
+              <p class="style7"> 当年我们‘南洋三少’去中国念书打球。经过一段严格的训练后， 身体素质也提高了不少，当时我还被誉为是在篮筐上打球的人。若要比较， 现在的我和古加尼身体状况只有四年前巅峰的60%。 如果能够再有个有系统的长期训练和饮食控制计划，应该能恢复到个90%吧。</p>
+              <p class="style7"> 我还蛮欣赏台湾队的风格的。有点韩国风，但却又有点自身的打法。虽然都是以快，投切为主，每个的个人能力都很强，但是却不像韩国那样偏重于外线投篮而已。我觉得我们大马队也可以参考一下台湾队的风格。以投切为主， 但不放弃对禁区的侵略和杀伤打法。                </p>
+              <p class="style7">恭喜台湾璞园建设成为第二届MIBC冠军队伍。希望他们不会觉得这次远行而来是是空手而回。来年还要继续来参加哦，期待明年再遇上他们。 </p>
+            </p></td>
+            <td width="23%" height="243"><p align="right" class="style6"><img src="/site_files/liwei.jpg" alt="liwei" width="122" height="132" /></p>            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="35" colspan="2" bgcolor="#E1FFFC"><strong>8 October 2009...</strong></td>
+          </tr>
+          <tr>
+            <td width="77%" rowspan="2"><span class="style6"><br>
+              经过了两天的MIBC比赛，  各个队伍的实力都已经浮出水面了。台湾队无疑是这次比赛的大热门。我们大马队也出乎意料的连胜中国珠海与香港队。哈哈，  我们算是爆出了大冷门啦。 每个到场看球的人应该对我们的首发阵容感到震惊吧。  别人中国队有‘天龙阵’， 我们马来西亚也有我们自己的‘天龙阵’。  除了控卫身高低于190CM以外，  其他四人都有接近200CM的身高。  这可是发哥一直以来所期待的阵容。当然这套阵容好不好使还有待时间去证明。还有真是佩服发哥的神机妙算，第一场有意的把魏川进和蔡子贤收起来，好让在接下来的场次当秘密武器。这算盘在险胜香港队时总于打响了，　呵呵，服！！！
+              </p>
+              </span>
+              <p class="style6">为了培养未来的接班人，发哥这次在用人方面下了很多心思。这次的阵容里聚集了很多年轻的球员。在这里我最想特别提到的几个年轻球员就是4号何耀隆，10号郭添源，11号罗树辉和12号关永镜。而他们都面对着和自己年龄相对应的缺点----  经验。树辉和永境是我在马六甲队的时候就很重点照顾和培养的球员。从州队到国家队我都很经常细心和严厉的指导他们。因为我是真的认为他们有很好的潜能。如今树辉已经算是国内数一数二的外线球员了。总算是有点小成绩了，  但是稳定性还不够好，有时候能够单场射下5个三分球，接下来的场次可能一个也没有。</p>
+              <p class="style6"> 至于永境小弟呢，  很抱歉呢， 因为之前位置和我重叠，所以得到的机会也比较少，  不好意思哦。 在发哥入主国家队之后，  对他的位置稍微做了些调整之后，相应的机会也多了，  技术和投篮也有很大幅度的进步。最大的问题就是不懂的和别人配合。  我以前的打篮球是先学会配合然后才学自己进攻，而他呢却恰恰相反。我没有资格去否定他的打法是错的。有时候情况就是这样，  球进了就是英雄， 不进的话就是狗熊。胆识是有了，  但是脑袋没有用上。只要他能多注意队友的存在，  比赛的质量一定会有所提高。</p>
+              <p class="style6">在这之中，添源的天赋和先天条件都比我们现在国家队里的所有人来的好。  加以培养的话以后绝对是马来西亚篮球圈的另一个巨星。这两场比赛里，  我个人认为他的发挥在他的平时水平之下。最大的因素就是心态----  紧张和压力。 机会是已经给了，  但能不能把握好就看自己了。我们比赛时期都主张多鼓励少责怪。  但平时训练的时候就应该狠狠的批评。最近看添源赛前训练，不难发现一直在抓头，愁眉苦脸的在责怪自己。甚至连我都不敢开口去说他了。就只能一直一直的去鼓励这小孩。  这就大慨就能猜想到他是多么的有压力了。放轻松点，  在这时候我们可不会太过为难你这个17岁的小孩的。做你能做的东西。</p>
+              <p class="style6">何耀隆---  在这之前我不怎么熟悉的球员，只是在一些比赛有遇过的对手，甚至还有过看不起他的时候。（那是因为自己当时年轻年少气盛，狂妄自大，  哈哈）。但是在这最新的一期国家队集训里，  他是我最让眼前一亮的球员，最惊喜的球员。  几次训练时在我面前突破上篮，高高拔起投三分，甚至还能飞身封盖。的确让我需要去重新评估这个新人。</p>
+              <p class="style6">想起自己以前也还蛮无聊的，  时常会带有色眼镜去看人或者会看小别人。  以前还没有踏进国家队时， 和别州的球员都没什么交流。  比如说会认为那个许伟德啊打球打不错就很跩啊，施仁很骄傲啊，那个谁谁谁看不顺眼啊。到自己打到有点程度了，  也会开始看不起人啊之类的。其实啊，  别人也会用同样的角度来看我的。说我什么很酷啊，  很跩，目中无人之类的。    哈哈，这也是年轻的成长过程啦，  谁没有年轻过。 但是这些态度是不值得学习的，  只有弊没有利。但当我进入国家队之后，  才发觉其实大家都很好相处的，也不是想象中那么高不可攀的。人与人相遇就是这样，  不打不相识。没有真正接触过，就不该完全去否定一个人。国家队就是这样的一个地方，里面大家有如兄弟一家人。  就如我曾经看错了何耀隆，现在也觉得他其实是蛮不错的一个人。</p>
+              <p class="style6">P/S : 最近一直让我们很多球员烦恼的事情总于有了个好结果 --- ABL。 名单里的大部分球员都已经签下了一份临时合同。呵呵，  可喜可贺！！！！</p>            </td>
+            <td width="23%" height="243"><p align="right" class="style6"><img src="/site_files/liwei.jpg" alt="liwei" width="122" height="132" /></p>            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="35" colspan="2" bgcolor="#E1FFFC"><strong>6 October 2009...</strong></td>
+          </tr>
+          <tr>
+            <td rowspan="2">
+              <br />
+              <span class="style6">首先在这里先祝贺大马篮总网页再次重新启动。 
+              </p>
+              </span>
+              <p class="style6"> 很荣幸的有机会可以在这里建立自己的小小专栏， 非常谢谢刘大哥的邀请。</p>
+              <p class="style6"> 自从去年七月份从中国回来后， 那时候心里对篮球的感觉是非常厌恶。因为六年里不停顿的日夜在打篮球。每天都是‘三点一线’的生活，宿舍，体育馆，课室。就这样，篮球从最爱变成最恨了。真的真的很想逃离篮球这个圈子。 这就是我非要回来马来西亚而没选择留在中国发展的首要原因。 没想到时隔一年之后，我又重新对篮球燃起了热情。 这从最爱到最讨厌再回到最爱，当中让我启发了不少东西， 也想通了很多。球技也明显的有了很大的进步。最大的鼓励莫就是2008年在NBL和元首杯协助马六甲夺冠，并且还很意外的拿了个MVP。真的很意外，但是又觉得很应该。 哈哈哈， 非常矛盾吧。</p>
+              <p class="style6"> 还记得在中国的时候有个老师对我说， 个子长的那么高大， 如果不去搞点什么运动， 那不就荒废上天赐给你的天赋。 所以我就继续的在马来西亚篮坛里挑战自己，重新点燃了自己的斗志。 对不起啦，我在华侨大学的队友们， 我欺骗了你们说我不想再继续打篮球了， 呵呵。</p>
+              <p class="style6"> 最近还真的经常参与很多篮球的活动。 有篮球比赛啦， 拍照啦， 拍短片啦， 推广篮球活动， 上篮球培训班当教练啦，上电台啊，还有最惊喜的是以球员代表的身份参加了大马篮总的篮球研讨会。 里面有很多话题我都从来没有涉及过的。 这三天两夜的研讨会让我受益不少，增广了很多见闻。</p>
+              <p class="style6"> 再过两天第二届大马篮球国际邀请赛就要开始了。 去年很幸运的在两名外援的协助下拿下了冠军。今年以全本土球员阵容出战的我们能够以怎样的名次结束呢？ 我在对外的时候都宣布说没什么目标啊， 赢一场就爆冷啊， 赢两场就爆大冷啊，赢三场就什么什么的... 其实哦， 我只是喜欢低调， 而且喜欢用挑战者的身份去面对比赛。 做王者是很辛苦的哦， 还是挑战者比较适合我啊。</p>
+              <p class="style6"> 说起今年的阵容， 比起往年确实是有了很多新面孔。有者还是第一次代表国家队， 有的国家队比赛的经验不超过10场。而和我同批的球员呢， 又大了一岁。唉， 老的老，嫩的嫩。 不过还蛮期待这样的老少配能擦出些什么火花， 能有什么样的化学变化。还有再看看我们的神奇教练‘发哥’能不能再变点魔法出来吧。</p>
+              <p class="style6"> 第一场比赛 十一日晚上九点 对中国珠海队 预测 45% 对 55% 中国占优势。</p>
+              <p class="style6">以我对他们的认识， 他们的球员也有些年纪了， 加上不定时的训练 ( 不过不肯定他们有否为了这个比赛而集训或请了‘雇佣兵’啦 )。</p>
+              <p class="style6"> 论身高体型和经验， 我们还是输了一点， 加上他们那些习惯打‘野球’的动作，粗野又硬朗。我们是否可以适应呢。(最好是裁判不能适应啦， 哈哈!!)。所以啊队友们要硬朗起来， 只要我们也能用体力拖垮他们，我们还是有机会的啊。
+                
+            最好有很多很多的球迷来支持， 这样胜算就会高一点咯...</p></td>
+            <td height="358"><p align="right"><img src="/site_files/liwei.jpg" width="122" height="132" /></p>
+            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2"><div align="center"></div></td>
+          </tr>
+      </table>
+      </p></td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t2" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>

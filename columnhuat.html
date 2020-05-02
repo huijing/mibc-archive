@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>MIBC 振聋发聩</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+body  {
+	font: 100% Calibri;
+	background: #FFFFFF;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColLiqLtHdr #container {
+	width: 900px;  /* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+	vertical-align: text-bottom;
+} 
+.twoColLiqLtHdr #header { 
+	background: #FFFFFF; 
+	padding: 0 ;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+} 
+.twoColLiqLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+
+/* Tips for sidebar1:
+1. since we are working in percentages, it's best not to use padding on the sidebar. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+2. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColLiqLtHdr #sidebar1 p" rule.
+3. Since Explorer calculates widths after the parent element is rendered, you may occasionally run into unexplained bugs with percentage-based columns. If you need more predictable results, you may choose to change to pixel sized columns.
+*/
+.twoColLiqLtHdr #sidebar1 {
+	float: left; 
+	width: 202px; /* since this element is floated, a width must be given */
+	background: #FFFFFF; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0; /* top and bottom padding create visual space within this div  */
+}
+.twoColLiqLtHdr #sidebar1 h3, .twoColLiqLtHdr #sidebar1 p {
+	margin-left: 5px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 5px;
+}
+
+/* Tips for mainContent:
+1. the space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. to avoid float drop at a supported minimum 800 x 600 resolution, elements within the mainContent div should be 430px or smaller (this includes images).
+3. in the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs.
+*/
+.twoColLiqLtHdr #mainContent { 
+	margin: 0 ; /* the right margin can be given in percentages or pixels. It creates the space down the right side of the page. */
+} 
+.twoColLiqLtHdr #footer { 
+	padding: 0 0px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#FFFFFF;
+} 
+.twoColLiqLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 0px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+</style>
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColLiqLtHdr #sidebar1 { padding-top: 30px; }
+.twoColLiqLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<link href="/site_files/mibc_css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style6 {font-size: 14px}
+-->
+</style>
+</head>
+
+<body class="twoColLiqLtHdr">
+<!-- TemplateBeginEditable name="振聋发聩" -->
+<div id="container">
+  <div id="header">
+    <table width="100%" height="26" valign="baseline" border="0">
+      <tr>
+        <td width="100%" valign="baseline"><img src="/site_files/mibcbanner.jpg" width="900" height="400" /></td>
+      </tr>
+    </table>
+    <!-- end #header -->
+  </div>
+  <div id="sidebar1">
+    <table width="100%" height="259" border="1">
+      <tr>
+        <td align="left" valign="top"><p><img src="/site_files/sitenavigation.gif" width="203" height="68" /></p>
+        <p>
+          <iframe src="leftmenu.html" name="news_t" width="200" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p></td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/column.png" width="208" height="68" /></p>
+        <p>
+        <iframe src="sidetalk.html" name="news_t" width="200" marginwidth="0" height="250" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+      <tr>
+        <td height="88" align="left" valign="top" bgcolor="#FFFFFF"><p><img src="/site_files/schedule.gif" /></p>
+        <p>
+        <iframe src="sideschedule.html" name="news_t" width="200" marginwidth="0" height="430" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+        </p>      </td>
+      </tr>
+    </table>
+  </div>
+  <div id="mainContent">
+    <!-- end #mainContent -->
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <table width="76%" height="263" border="0">
+    <tr>
+      <td width="7%" align="left" valign="top">&nbsp;</td>
+      <td width="93%" align="left" valign="top"><p><img src="/site_files/headerfat.png" width="215" height="71" /></p>
+      <table width="100%" border="0">
+          <tr>
+            <td height="35" colspan="2" bgcolor="#FDEAA8"><strong>9 October 2009...</strong></td>
+          </tr>
+          <tr>
+            <td width="77%"><br /><span class="style6">险胜中国香港，不敌台湾璞园，我想，我们马来西亚国家队在这次的国际邀请赛，得到很多的启发，也肯定我个人想为球队注入的未来方向，那就是：我们需要向韩国或台湾队学习那种轻松自在，又能全场奔忙，奋力争胜的打法和精神。 </span></p>
+                <p><span class="style6">我要感谢璞园队，经过这一场比赛，我相信，我们的队员更清晰的意识到，必须对本身有所坚持，尤其是在对拚的当儿，我们队员本身的思想意识一定要无比的坚定，从而鞭策自己勇往直前。</span></p>
+              <p><span class="style6"> 我们的队员在上半场，当被对手拉开比分后，开始陷入犹疑与畏惧，所以，我们出现了很多失误，让璞园队拿了很多便宜分数。我认为，璞园队的演出实在太好了，尤其外投非常的准，如果他们的命中率不会那么高的话，我们或许还有再次迫近的机会。</span></p>
+              <p><span class="style6"> 我在半场休息时向球员强调，我们必须要有更强烈的欲望，才能收窄落后的差距。赛前，我预定的目标是尽可能少输，只要不输过20分，我已经知足。
+                
+                
+                从战胜中国珠海、中国香港和不敌璞园的三场比赛来看，我认为，我们的明显的弱点，是我们队员的力量不及三者，然而，在战术上，包括即将对垒的菲律宾和韩国队，我们可以看到这些队伍有着明显的球路风格。</span><span class="style6">在这几个球路风格当中，我个人认为韩、台会比较适合我们去跟从。</span></p>
+              <p><span class="style6">所以，在我执掌国家队之后，从心态上，我向队员灌输要有坚强的信念，在技术上，我要求队员更积极的开发技术的多面性，我希望他们不论高矮、不论中锋或后卫或前锋，他们都需要具备每个位置所需要的技术。
+                
+            而在身体条件上，我们必须加强力量的对抗，提高体能以面对更快速的奔跑，不间断的变速来回能力，这是国家队今后要走的方向。</span></p>              </td>
+            <td width="23%"><div align="right"><img src="/site_files/chenghuat.jpg" alt="ChengHuat" width="122" height="133" /></div></td>
+          </tr>
+          <tr>
+            <td><br>The past two games against Hong Kong China and Pure Youth Construction have given me much inspiration for direction the Malaysia National Men's team ought to take in the future. The Koreans and Taiwanese play a free-flowing game, which is a pleasure to watch, yet their players play with a lot of heart, passion and an unrelenting will to win.</p>
+              <p> I believe that our players learned, from last night's experience, the importance of persistence, especially when the going gets tough. Even when we are down, we have to push on and fight. Our players started to doubt themselves when our opponents started to pull away, resulting in a flurry of turnovers, allowing the Pure Youth team many easy baskets.</p>
+            <p> I feel that the Pure Youth team played a very good game, and shot extremely well from the perimeter, making it near impossible for us to get back into the game. I had emphasized to my boys during halftime that we had to have a stronger will in order to cut into the Taiwanese lead.
+              My target for the team before the game was to keep the score within 20 points. </p>
+            <p>Compared to the other three teams we have played against, I could see that our boys were physically out-matched in every game.
+              I have also noticed that every team has its own distinct playing style, and out of all these teams, the Korean and Taiwanese styles are the most apt for us to mimic. </p>
+            <p>After I took over the National team, I have tried to instill in my players a stronger will to win. I also stressed to them the importance of being versatile on the court, and for them to have the skills to play every position, regardless of height or designated position. We also have to become physically stronger and fitter to be able to go up and down the court without tiring easily. I feel this is the direction our national team training should take in the future.</p></td>
+            <td>&nbsp;</td>
+          </tr>
+           <tr>
+            <td height="35" colspan="2" bgcolor="#FDEAA8"><strong>7 October 2009...</strong></td>
+          </tr>
+           <tr>
+             <td height="35" bgcolor="#FFFFFF" class="style6"><br /><strong>胜珠海更有信心拚香港
+               
+               4新秀首仗各有展现
+              </strong></p>
+               <p> 首仗取胜珠海免税集团，我感到很高兴，因为，基本上，我们的队员都做到赛前预定的指标。我想，没有什么比实现既定目标来的更开心的了，加上又赢下了比赛，这样的首仗战果，是再理想不过的事。               </p>
+               <p>这也给球队应对对垒中国香港的战役，有更强烈的信心与欲望。从香港队的韩国朝鲜大学的比赛来看，他们是一支非常具有战斗力的队伍，个别队员具备了壮硕的体格，而更让我留下深刻印象的是，他们是十二人车轮战，人人争先、个个敢打。               </p>
+               <p>当然，我们也用上了十二个队员与珠海队争雄。我预期，这会是一场很难打的比赛。在打完珠海队的当儿，我还不及设想如何应付这支香港队，因为，我仍然和队员一样，投入在打败珠海队的喜悦当中。</p>
+               <p>摊开来说，我们个别队员的表现都让我感到满意。我特别要提出这次在队的4名新秀，他们都没有让人失望。虽然像颜坊峰会让人觉得很紧张，但是，对一个新丁来讲，他干的很不错了。               </p>
+               <p>何耀隆是一个具有领导才能的队员，当我们被珠海队缠上时，罗树辉的两次进球，把球队带离险境，而耀隆在控球时，通过个人的速度，让球队在节奏上有所突破。</p>
+               <p> 两个高个子--关永境和郭添源，他们也同样让人充满期许。我希望他们能够通过比赛加强信心，提升他们的战斗意识，总不能像在州队那样，每旦遇上强队，就容易泄气，这些，他们都有所改变。             </p>
+               <p>我想，这个胜利最大的收获，应该是在于我们看到了新人新丁那股强烈争胜，不惧强敌的精神，这是选上新人的好处吧，他们为球队注入了新的竞争，新的精神面貌。</p></td>
+             <td height="35" bgcolor="#FFFFFF"><div align="right"><img src="/site_files/chenghuat.jpg" alt="ChengHuat" width="122" height="133" /></div></td>
+           </tr>
+           <tr>
+             <td height="35" bgcolor="#FFFFFF"><br /><p>I'm quite pleased with the performance of the team tonight because every player did what they were supposed to. As a coach, there are few pleasures greater than seeing your team meeting your expectations. The fact that they won the game is even better. I think this will be a good morale booster for the team as they will be playing against the Hong Kong squad tomorrow. 
+               </p>
+               <p>From the game against Korea, I can see that the Hong Kong team has great fighting spirit. Also, their players are very well-built and strong. With a twelve-player rotation, everybody is fighting for a chance to play and perform well. </p>
+               <p>Of course, I also used a twelve-player rotation against the Chinese today.
+                 I have yet to really sit down and think through how we will deal with the Hong Kong team tomorrow but I am proud of my boys and how they did tonight. </p>
+               <p>My four youngsters did not disappoint at all. Although Gan Hong Hoong seemed nervous at times, I feel he did well for a rookie. Ho Yeow Loong has showed he has the potential to lead the team and Loh Shee Fai managed to keep his cool and knock down two 3-pointers during a crucial juncture in the game. </p>
+               <p>Yeow Loong is a very quick player and he managed to push the pace of the game with his speed. The two young towers, Kwaan Yong Jing and Kuek Tian Yuan have also shined tonight. </p>
+               <p>I hope that these two boys will gain some confidence from tonight's game and be even more motivated to fight and win. They can't possibly remain at the standard of the state teams, giving up whenever the going gets tough. </p>
+               <p>I can see that they are improving though, and I feel that the best part of tonight's victory is seeing my youngsters showing their fighting spirit and playing to the best of their ability. </p>
+             <p>I suppose that's the advantage of picking young players, as they inject a new level of competitiveness and energy to the team.</p></td>
+             <td height="35" bgcolor="#FFFFFF">&nbsp;</td>
+           </tr>
+           <tr>
+             <td height="35" colspan="2" bgcolor="#FDEAA8"><strong>6 October 2009...</strong></td>
+          </tr>
+           <tr>
+             <td height="16" bgcolor="#FFFFFF"><span class="style6"><br /><strong>敦促新秀由简入繁	去除压力轻装上阵 </strong>
+              </p>
+              </span>
+               <p class="style6">迎接国际邀请赛的第一仗，我在开赛前一直寻思该如何应对中国珠海这支队伍，但是，因为对他们的了解实在很有限，而且，从名单上来说，他们也换了一些队员，实力会到什么程度，
+                 
+               比赛的难度又会到哪里，心理实在没底。 </p>
+               <p class="style6">以国际邀请赛的水平来说，我深信，珠海这支球队会有很多的亮点。所以，临近出赛的这些天，我在训练的工作上，侧重在防守。我希望我的球员能够发挥有效的防守，这么一来，才会
+                 
+               有希望打开进攻。 </p>
+               <p class="style6">坦白说，在自家门前打比赛，我仍然感到些许压力。如果说没有压力，那是骗人的。我当然也会担心，球队打不好，会招惹球迷的批评。
+                 
+               做为教练，有这种压力是寻常事，可是，做为球员，我希望我的队员能够轻松上阵，好好的享受这一场比赛。</p>
+               <p class="style6"> 这个队，我特别点选了4个年轻球员，他们都没有太好的国际赛经验，说到底，我是带他们来练兵的。所以，我对他们没有太多的要求。
+                 
+                 他们当中，可能有些人急于表现自己，不过，我想，新秀们应该抱着平常心看待这次的机会，希望他们能够简单的处理球，别想得太复杂，我想，只有这样才能减去他们的压力，也免除
+                 
+             不必要的思想包袱。</p>               </td>
+             <td height="16" bgcolor="#FFFFFF"><div align="right"><img src="/site_files/chenghuat.jpg" width="122" height="133" /></div></td>
+           </tr>
+           <tr>
+             <td height="17" bgcolor="#FFFFFF"><p><br />
+               I've been spending a lot of time thinking about how to deal with the Chinese team during opening night, 
+              
+              because our understanding of their strengths and weaknesses, as well as team strategies is quite 
+              
+              limited. They've also changed up some of their players from when we last played against them so it is 
+              
+              really quite hard to anticipate what we will be up against.
+             </p>
+               <p> I believe that this Chinese team will shine on an international stage. With the tournament fast 
+                 
+                 approaching, I have emphasized defense during our team's training. I hope that my players will be able 
+                 
+                 to play a good defensive game, because we need a sound defense to kick-start our offense. </p>
+               <p>To be honest, there is a certain amount of pressure playing in front of a home crowd. I would be lying 
+                 
+                 if I said otherwise. It's only natural that I would be worried, to some extent, of the criticism we may 
+                 
+                 face if our performance is not up to standard.
+                 As a coach, such pressure in inevitable, but I hope that the players themselves will be able to relax 
+                 
+                 and enjoy the game.</p>
+               <p> I chose 4 young players with very little international exposure for this team mainly 
+                 
+                 to allow them to gain valuable experience and improve their game. I do hold overly high expectations for 
+                 
+                 them, and only hope that they learn something from this. </p>
+               <p>I know that some of them are eager to prove themselves but I feel that as young players, they should 
+                 
+                 approach this tournament just as they do any other game and not put too much pressure on themselves. I 
+                 
+             would like them to play without thinking too much and just take good care of the basketball. </p></td>
+             <td height="17" bgcolor="#FFFFFF">&nbsp;</td>
+           </tr>
+      </table>
+      </p></td>
+    </tr>
+  </table>
+   <br class="clearfloat" />
+  <div id="footer">
+    <iframe src="footer.html" name="news_t" width="900" marginwidth="0" height="200" marginheight="0" scrolling="No" frameborder="0" id="news_t" allowtransparency="true" border="0"></iframe>
+    <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+<!-- TemplateEndEditable -->
+</body>
+</html>
